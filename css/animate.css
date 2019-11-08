@@ -1,0 +1,14 @@
+.img-topbottom{
+    animation-duration: 2s;
+    animation-name: moveTop;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moveTop {
+    0%   {top: 90vh;}
+    25%  {top: 88vh;}
+    50%  {top: 90vh;}
+    75%  {top: 88vh;}
+    100% {top: 90vh;}
+}
+

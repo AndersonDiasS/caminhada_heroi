@@ -1,0 +1,18 @@
+body {
+    font-family: sans-serif;
+    background-color: #1b1b1b;
+}
+
+.template-grid {
+    display: grid;
+    max-width: 1040px;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1em;
+    background: lightcyan;
+}
+
+.grid-item {
+    height: 20vh;
+    background-color: goldenrod;
+}

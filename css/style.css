@@ -1,0 +1,339 @@
+html{
+    scroll-behavior: smooth;
+ 
+}
+
+body {
+    font-family: "Muli" !important;
+}
+
+h1 {
+    font-size: calc(2em + 2vw);
+}
+
+h2 {
+    font-size: calc(2em + 1.5vw);
+}
+
+h3 {
+    font-size: calc(1em + 1.25vw);
+}
+
+h4 {
+    font-size: calc(0.8em + 1.25vw);
+}
+
+p {
+    font-size: calc(0.8em + 0.5vw);
+    line-height: calc(1.4em + 0.5vw);
+}
+
+.content {
+    width: 90%;
+    max-width: 1920;
+    margin: 0 auto;
+}
+
+.big-paragraph {
+    font-size: calc(0.8em + 0.7vw);
+    line-height: calc(1.2em + 0.7vw);
+}
+
+/* HEADER */
+
+#header {
+    background: linear-gradient(17.97deg, #FF305C 0%, #7427F1 100%);
+    text-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
+    height: 100vh;
+    color: white;
+}
+
+#header .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-column-gap: 3vw;
+    padding-top: 30vh;
+}
+
+#header .left {
+    text-align: right;
+    padding-top: 4%;
+}
+
+#header .left h1 {
+    font-weight: 100;
+    font-size: calc(3rem + 3vw);
+}
+
+#header .right h1 {
+    text-align: left;
+    font-weight: 900;
+    font-size: calc(3rem + 6vw);
+    padding: 2;
+    font-weight: 900;
+}
+
+/* INTRO */
+
+
+#intro .content {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 3vw;
+    vertical-align: middle;
+}
+
+#intro .texto {
+    padding-right: 5%;
+    padding-top: 10%;
+    grid-column: 3 / span 5;
+
+}
+
+#intro p {
+    padding-top: 8%;
+    color: #262626;
+}
+
+#intro .big-paragraph {
+    color: #FF305C;
+    font-size: calc(0.8em + 1vw)
+}
+
+#intro .image {
+    grid-column: 8 / span 12;
+    background-image: url("../images/ilustra_intro_01.png");
+}
+
+
+/* ABRE METODOLOGIA */
+
+#abre-metodologia{
+    height:170vh
+}
+
+
+#abre-metodologia .content {
+    width: 90%;
+    max-width: 1600px;
+    margin: 0 auto;;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-gap: 6%;
+}
+
+#abre-metodologia h3 {
+    font-size: calc(1.5rem + 1vw);
+    vertical-align: middle;
+}
+
+
+#abre-metodologia .align-right {
+    display: grid;
+    text-align: right;
+    padding-top: 15%;
+    font-weight: 900;
+    vertical-align: middle;
+    color: white;
+    background: -webkit-linear-gradient(top,#7427F1,#00DFEC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#abre-metodologia .align-left {
+    display: grid;
+    padding-top: 15%;
+    text-align: left;
+    color: white;
+    background: -webkit-linear-gradient(top,#7427f1,#ff305c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#abre-metodologia .image_01 {
+    height: 100%;
+    width: 50%;
+    background: linear-gradient(0deg, #FF305C 0%, #7427F1 100%);
+}
+
+
+/* METODOLOGIA */
+
+ #metodologia {
+    padding-top: 15%;
+    background: linear-gradient(0deg, #FF305C 0%, #7427F1 100%);
+    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%)
+ }
+
+ #metodologia::after{
+    content: '';
+    height: 200px;
+    background: #7427F1;
+    clip-path: polygon(0% 45%, 100% 45%, 100% 0%);
+    -webkit-clip-path: polygon(0% 45%, 100% 45%, 100% 0%);
+    bottom: 0px;
+    width: 100%;
+ }
+
+ #metodologia {
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+ }
+
+ #metodologia .intro {
+    max-width: 850px;
+    margin: 0 auto;
+ }
+
+ #metodologia .topicos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+    padding-bottom: 20vh;
+ }
+
+ #metodologia .topicos .txt_right {
+    text-align: right;
+    
+}
+
+
+/* NÓS PODEMOS TE AJUDAR */
+
+#podemos-te-ajudar {
+    background-color: #ff305c;
+    color: white;
+    text-align: center;
+ }
+
+ #podemos-te-ajudar .content {
+    height: 100vh;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+ }
+
+ #podemos-te-ajudar::after {
+    content: '';
+     height: 200px;
+     background: #262626;
+     clip-path: polygon(0% 45%, 100% 45%, 100% 0%);
+     -webkit-clip-path: polygon(0% 45%, 100% 45%, 100% 0%);
+     bottom: 0px;
+     width: 100%;
+ }
+
+/* GRUPO EMPREENDEDORES */
+
+#grupo-empreendedores {
+    background-color: #262626;
+    color: white;
+    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%)
+ }
+ 
+
+ #grupo-empreendedores .content  h3 {
+    padding: 6%;
+ }
+
+ #grupo-empreendedores .content {
+    width: 90%;
+    max-width: 1420px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 10%;
+ }
+
+ #grupo-empreendedores .grupo-01 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+    padding-top: 5%;
+    text-align: right;
+    color: #00DFEC;
+    font-weight: lighter;
+    font-size: calc(1rem + 0.3vw);
+    border: #00DFEC;
+ }
+
+ #grupo-empreendedores .grupo-01 .image_01 {
+    background-image: url("../images/grupo-empreendedores_ilustra01.png");
+    height: 100%;
+    width: 50%;
+ }
+
+ #grupo-empreendedores .grupo-01 p {
+    border-right: solid;
+    border-width: thin;
+    padding-right: 3%;
+    min-height: 200px;
+    margin: 0 auto;
+ }
+
+ #grupo-empreendedores .grupo-02 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+    text-align: left;
+    color: #00DFEC;
+    font-weight: lighter;
+    font-size: calc(1rem + 0.3vw);
+    border: #00DFEC;
+ }
+
+ #grupo-empreendedores .grupo-02 .image_02 {
+    background-image: url("../images/grupo-empreendedores_ilustra02.png");
+    height: 100%;
+    width: 50%;
+    border-right: solid;
+    border-width: thin;
+    min-height: 200px;
+    margin: 0 auto;
+ } 
+ 
+ 
+ #grupo-empreendedores::after {
+    content: '';
+     height: 200px;
+     background: #262626;
+     clip-path: polygon(0% 45%, 100% 45%, 100% 0%);
+     -webkit-clip-path: polygon(0% 45%, 100% 45%, 100% 0%);
+     bottom: 0px;
+     width: 100%;
+ }
+
+
+/* FECHA INTRO */
+
+#fecha-intro {
+    background-color: #ffffff;
+    color: #262626;
+    width: 50%;
+    max-width: 1400px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 200%;
+    height: 80vh;
+ }
+
+
+ 
+/* MELHOR CAMINHO */
+
+#melhor-caminho {
+    background: linear-gradient(33.3deg, #FF305C 0%, #7427F1 100%);
+    height: 100vh;
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.melhor-caminho-txt h1 {
+
+    font-size: 6vw;
+    line-height: 9vw;
+    font-weight: 900;
+    padding: 10%;
+    margin: 0 auto;
+    text-align: left;
+}
