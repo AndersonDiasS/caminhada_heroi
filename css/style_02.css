@@ -1,6 +1,8 @@
 body {
     font-family: Muli;
     font-style: normal;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 

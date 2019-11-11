@@ -27,6 +27,11 @@ p {
     line-height: calc(1.4em + 0.5vw);
 }
 
+
+.text-center{
+    text-align: center;
+}
+ 
 .content {
     width: 90%;
     max-width: 1920;
@@ -53,7 +58,7 @@ p {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     grid-column-gap: 3vw;
-    padding-top: 30vh;
+    padding-top: 15vh;
 }
 
 #header .left {
@@ -228,7 +233,7 @@ p {
     color: white;
     clip-path: polygon(0 10%, 100% 0, 100% 95%, 0 100%);
     margin-top: -18vh;
-    padding-bottom: 5vh;
+   
 }
 
 #grupo-empreendedores .content h3 {
@@ -334,13 +339,35 @@ p {
 #ideathon{
     display: flex;
     justify-content: center;
+    height: 100vh;
 }
  #ideathon .card{
     width: 90%;
-    display: flex;
     background: #fff;
-    justify-content: center;
+    height: 95vh;
  }
 
+ #ideathon .card img {
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 20vh;
+ }
+
+ #ideathon .card p, a, i{
+     font-size: 30px;
+     line-height: 38px;
+     text-align: center;
+     color: #7427F1;
+    }
+
+    .action-button{
+        transition: all 1s;
+    }
+
+    .action-button{
+        animation-duration: 1s;
+        animation-name: before_after;
+        animation-iteration-count: infinite;
+    }
 /* ideathon */
 
