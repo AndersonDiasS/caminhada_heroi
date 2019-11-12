@@ -1,0 +1,79 @@
+$font-primary: #7427f1;
+
+/* Ideathon  */
+#ideathon {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(145.3deg, #FF305C 0%, $font-primary 100%);
+}
+.ideathon .card {
+  width: 97% !important;
+  background: #fff;
+  height: 95vh;
+}
+
+.ideathon .card-swiper img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20vh;
+}
+
+.ideathon .card-swiper , p,
+a, i {
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: 800;
+  text-align: center;
+  line-height: 38px;
+}
+
+.action-button {
+  
+  margin-top: 15vh;
+  transition: all 1s;
+}
+
+.ideathon .slick-list .slick-track .card,
+img, a, p {
+  margin: 0 auto;
+  text-align: center;
+  color: $font-primary;
+}
+
+.ideathon .slick-list {
+  width: 100% !important;
+  .slick-track {
+    width: 100% !important;
+  }
+}
+ 
+
+#descricao-ideathon{
+    margin-top: 5vh;
+    p{
+        color: #fff;
+        font-weight: normal;
+        line-height: 160%;
+        font-size:20px;
+        @media only screen and (max-width:1366px){
+            font-size: 18px;
+            line-height: 155%;
+        }
+    }
+    .row{
+        margin-top: 10vh;
+        @media only screen and (max-width:1366px){
+            margin-top: 5vh;
+        }
+    }
+
+    .action-button{
+        @media only screen and (max-width:1366px){
+            margin-top: 8vh;
+        }
+    }
+
+
+}
+/* ideathon */
