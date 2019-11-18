@@ -1,5 +1,9 @@
 $font-primary: #7427f1;
 
+
+.primary-font{
+  color: $font-primary;
+}
 /* Ideathon  */
 #ideathon {
   display: flex;
@@ -21,7 +25,7 @@ $font-primary: #7427f1;
   margin-top: 20vh;
 }
 
-#ideathon  a, i, p {
+#ideathon  a,  p {
   font-size: 30px;
   line-height: 38px;
   font-weight: 800;
@@ -30,11 +34,16 @@ $font-primary: #7427f1;
   color: $font-primary;
 }
 
+.start-jorney{
+  margin-top: 5vh;
+}
+
 #ideathon p{
   font-size: 30px;
   font-weight: normal!important;
   // margin-top: 30px;
   color: $font-primary;
+
 }
 
 
@@ -53,9 +62,10 @@ img, a, p {
 // }
  
 
+
 #descricao-ideathon{
-    margin-top: 5vh;
-    p{
+    // margin-top: 5vh;
+    p, a{
         color: #fff;
         font-weight: normal;
         line-height: 160%;
@@ -68,7 +78,7 @@ img, a, p {
     .row{
         margin-top: 10vh;
         @media only screen and (max-width:1366px){
-            margin-top: 5vh;
+            margin-top: 10vh;
         }
     }
 

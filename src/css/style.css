@@ -7,6 +7,9 @@ body {
   height: 100vh !important;
   margin: 0 !important; }
 
+.white {
+  color: white !important; }
+
 .template-grid {
   display: grid;
   max-width: 1040px;
@@ -199,7 +202,8 @@ p {
   text-align: center;
   margin: 0 auto; }
 
-#metodologia .intro, p {
+#metodologia .intro,
+p {
   max-width: 850px;
   margin: 0 auto;
   color: white; }
@@ -216,7 +220,8 @@ p {
 .txt_right {
   text-align: right; }
 
-.txt_right, .txt_left {
+.txt_right,
+.txt_left {
   padding-top: 35px; }
 
 #metodologia .topicos .txt_left p {
@@ -373,12 +378,66 @@ p {
   justify-content: center; }
 
 .scrolling-content {
-  background: linear-gradient(145.3deg, #FF305C 0%, #7427f1 100%);
+  background: linear-gradient(145.3deg, #ff305c 0%, #7427f1 100%);
   transition: background 0.5s ease; }
+
+.panel-buttons .btn-prev,
+.panel-buttons .btn-next {
+  opacity: 0.5; }
+  .panel-buttons .btn-prev i,
+  .panel-buttons .btn-next i {
+    transition: 0.5s; }
+
+.btn-prev:hover, .btn-next:hover {
+  opacity: 1.0; }
 
 .action-button {
   margin-top: 10vh;
   transition: all 1s; }
+
+.panel-buttons .btn-prev::after {
+  content: "";
+  border: 1px solid;
+  margin-left: 25px; }
+.panel-buttons .btn-next::before {
+  content: "";
+  margin-right: 25px; }
+
+.btn-next:hover i, .btn-prev:hover i {
+  font-size: 30px; }
+
+.panel-buttons {
+  margin-top: 0px;
+  bottom: 15vh;
+  transition: all 1s;
+  position: absolute;
+  align-content: center;
+  right: 40.5vw; }
+  @media only screen and (max-width: 1366px) {
+    .panel-buttons {
+      bottom: 6vh;
+      transition: all 1s;
+      position: absolute;
+      align-content: center;
+      right: 38.5vw; } }
+
+.btn-primary {
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: #ff305c;
+  font-weight: 900;
+  width: 194px;
+  height: 43px;
+  font-family: "Muli";
+  font-style: normal;
+  font-size: 20px;
+  border: 0px solid;
+  margin-top: 4vh;
+  transition: 0.5s; }
+
+.btn-primary:hover {
+  margin-top: 5vh;
+  box-shadow: unset; }
 
 #Builders {
   height: 100vh !important; }
@@ -407,6 +466,9 @@ body {
   height: 100vh !important;
   margin: 0 !important; }
 
+.white {
+  color: white !important; }
+
 .template-grid {
   display: grid;
   max-width: 1040px;
@@ -599,7 +661,8 @@ p {
   text-align: center;
   margin: 0 auto; }
 
-#metodologia .intro, p {
+#metodologia .intro,
+p {
   max-width: 850px;
   margin: 0 auto;
   color: white; }
@@ -616,7 +679,8 @@ p {
 .txt_right {
   text-align: right; }
 
-.txt_right, .txt_left {
+.txt_right,
+.txt_left {
   padding-top: 35px; }
 
 #metodologia .topicos .txt_left p {
@@ -773,12 +837,66 @@ p {
   justify-content: center; }
 
 .scrolling-content {
-  background: linear-gradient(145.3deg, #FF305C 0%, #7427f1 100%);
+  background: linear-gradient(145.3deg, #ff305c 0%, #7427f1 100%);
   transition: background 0.5s ease; }
+
+.panel-buttons .btn-prev,
+.panel-buttons .btn-next {
+  opacity: 0.5; }
+  .panel-buttons .btn-prev i,
+  .panel-buttons .btn-next i {
+    transition: 0.5s; }
+
+.btn-prev:hover, .btn-next:hover {
+  opacity: 1.0; }
 
 .action-button {
   margin-top: 10vh;
   transition: all 1s; }
+
+.panel-buttons .btn-prev::after {
+  content: "";
+  border: 1px solid;
+  margin-left: 25px; }
+.panel-buttons .btn-next::before {
+  content: "";
+  margin-right: 25px; }
+
+.btn-next:hover i, .btn-prev:hover i {
+  font-size: 30px; }
+
+.panel-buttons {
+  margin-top: 0px;
+  bottom: 15vh;
+  transition: all 1s;
+  position: absolute;
+  align-content: center;
+  right: 40.5vw; }
+  @media only screen and (max-width: 1366px) {
+    .panel-buttons {
+      bottom: 6vh;
+      transition: all 1s;
+      position: absolute;
+      align-content: center;
+      right: 38.5vw; } }
+
+.btn-primary {
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: #ff305c;
+  font-weight: 900;
+  width: 194px;
+  height: 43px;
+  font-family: "Muli";
+  font-style: normal;
+  font-size: 20px;
+  border: 0px solid;
+  margin-top: 4vh;
+  transition: 0.5s; }
+
+.btn-primary:hover {
+  margin-top: 5vh;
+  box-shadow: unset; }
 
 #Leaners {
   height: 100vh !important; }
@@ -807,6 +925,9 @@ body {
   height: 100vh !important;
   margin: 0 !important; }
 
+.white {
+  color: white !important; }
+
 .template-grid {
   display: grid;
   max-width: 1040px;
@@ -999,7 +1120,8 @@ p {
   text-align: center;
   margin: 0 auto; }
 
-#metodologia .intro, p {
+#metodologia .intro,
+p {
   max-width: 850px;
   margin: 0 auto;
   color: white; }
@@ -1016,7 +1138,8 @@ p {
 .txt_right {
   text-align: right; }
 
-.txt_right, .txt_left {
+.txt_right,
+.txt_left {
   padding-top: 35px; }
 
 #metodologia .topicos .txt_left p {
@@ -1173,12 +1296,66 @@ p {
   justify-content: center; }
 
 .scrolling-content {
-  background: linear-gradient(145.3deg, #FF305C 0%, #7427f1 100%);
+  background: linear-gradient(145.3deg, #ff305c 0%, #7427f1 100%);
   transition: background 0.5s ease; }
+
+.panel-buttons .btn-prev,
+.panel-buttons .btn-next {
+  opacity: 0.5; }
+  .panel-buttons .btn-prev i,
+  .panel-buttons .btn-next i {
+    transition: 0.5s; }
+
+.btn-prev:hover, .btn-next:hover {
+  opacity: 1.0; }
 
 .action-button {
   margin-top: 10vh;
   transition: all 1s; }
+
+.panel-buttons .btn-prev::after {
+  content: "";
+  border: 1px solid;
+  margin-left: 25px; }
+.panel-buttons .btn-next::before {
+  content: "";
+  margin-right: 25px; }
+
+.btn-next:hover i, .btn-prev:hover i {
+  font-size: 30px; }
+
+.panel-buttons {
+  margin-top: 0px;
+  bottom: 15vh;
+  transition: all 1s;
+  position: absolute;
+  align-content: center;
+  right: 40.5vw; }
+  @media only screen and (max-width: 1366px) {
+    .panel-buttons {
+      bottom: 6vh;
+      transition: all 1s;
+      position: absolute;
+      align-content: center;
+      right: 38.5vw; } }
+
+.btn-primary {
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: #ff305c;
+  font-weight: 900;
+  width: 194px;
+  height: 43px;
+  font-family: "Muli";
+  font-style: normal;
+  font-size: 20px;
+  border: 0px solid;
+  margin-top: 4vh;
+  transition: 0.5s; }
+
+.btn-primary:hover {
+  margin-top: 5vh;
+  box-shadow: unset; }
 
 #Players {
   height: 100vh !important; }
@@ -1199,6 +1376,9 @@ p {
     font-weight: normal;
     color: #FF305C; }
 
+.primary-font {
+  color: #7427f1; }
+
 /* Ideathon  */
 #ideathon {
   display: flex;
@@ -1216,13 +1396,16 @@ p {
   margin-right: auto;
   margin-top: 20vh; }
 
-#ideathon a, i, p {
+#ideathon a, p {
   font-size: 30px;
   line-height: 38px;
   font-weight: 800;
   text-align: center;
   line-height: 38px;
   color: #7427f1; }
+
+.start-jorney {
+  margin-top: 5vh; }
 
 #ideathon p {
   font-size: 30px;
@@ -1235,25 +1418,23 @@ img, a, p {
   text-align: center;
   color: #7427f1; }
 
-#descricao-ideathon {
-  margin-top: 5vh; }
-  #descricao-ideathon p {
-    color: #fff;
-    font-weight: normal;
-    line-height: 160%;
-    font-size: 20px; }
-    @media only screen and (max-width: 1366px) {
-      #descricao-ideathon p {
-        font-size: 16px;
-        line-height: 155%; } }
-  #descricao-ideathon .row {
-    margin-top: 10vh; }
-    @media only screen and (max-width: 1366px) {
-      #descricao-ideathon .row {
-        margin-top: 5vh; } }
+#descricao-ideathon p, #descricao-ideathon a {
+  color: #fff;
+  font-weight: normal;
+  line-height: 160%;
+  font-size: 20px; }
   @media only screen and (max-width: 1366px) {
-    #descricao-ideathon .action-button {
-      margin-top: 8vh; } }
+    #descricao-ideathon p, #descricao-ideathon a {
+      font-size: 16px;
+      line-height: 155%; } }
+#descricao-ideathon .row {
+  margin-top: 10vh; }
+  @media only screen and (max-width: 1366px) {
+    #descricao-ideathon .row {
+      margin-top: 10vh; } }
+@media only screen and (max-width: 1366px) {
+  #descricao-ideathon .action-button {
+    margin-top: 8vh; } }
 
 .content-align {
   margin-top: -6vh; }
@@ -1266,6 +1447,9 @@ body {
   overflow-x: hidden;
   height: 100vh !important;
   margin: 0 !important; }
+
+.white {
+  color: white !important; }
 
 .template-grid {
   display: grid;
@@ -1459,7 +1643,8 @@ p {
   text-align: center;
   margin: 0 auto; }
 
-#metodologia .intro, p {
+#metodologia .intro,
+p {
   max-width: 850px;
   margin: 0 auto;
   color: white; }
@@ -1476,7 +1661,8 @@ p {
 .txt_right {
   text-align: right; }
 
-.txt_right, .txt_left {
+.txt_right,
+.txt_left {
   padding-top: 35px; }
 
 #metodologia .topicos .txt_left p {
@@ -1633,12 +1819,66 @@ p {
   justify-content: center; }
 
 .scrolling-content {
-  background: linear-gradient(145.3deg, #FF305C 0%, #7427f1 100%);
+  background: linear-gradient(145.3deg, #ff305c 0%, #7427f1 100%);
   transition: background 0.5s ease; }
+
+.panel-buttons .btn-prev,
+.panel-buttons .btn-next {
+  opacity: 0.5; }
+  .panel-buttons .btn-prev i,
+  .panel-buttons .btn-next i {
+    transition: 0.5s; }
+
+.btn-prev:hover, .btn-next:hover {
+  opacity: 1.0; }
 
 .action-button {
   margin-top: 10vh;
   transition: all 1s; }
+
+.panel-buttons .btn-prev::after {
+  content: "";
+  border: 1px solid;
+  margin-left: 25px; }
+.panel-buttons .btn-next::before {
+  content: "";
+  margin-right: 25px; }
+
+.btn-next:hover i, .btn-prev:hover i {
+  font-size: 30px; }
+
+.panel-buttons {
+  margin-top: 0px;
+  bottom: 15vh;
+  transition: all 1s;
+  position: absolute;
+  align-content: center;
+  right: 40.5vw; }
+  @media only screen and (max-width: 1366px) {
+    .panel-buttons {
+      bottom: 6vh;
+      transition: all 1s;
+      position: absolute;
+      align-content: center;
+      right: 38.5vw; } }
+
+.btn-primary {
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: #ff305c;
+  font-weight: 900;
+  width: 194px;
+  height: 43px;
+  font-family: "Muli";
+  font-style: normal;
+  font-size: 20px;
+  border: 0px solid;
+  margin-top: 4vh;
+  transition: 0.5s; }
+
+.btn-primary:hover {
+  margin-top: 5vh;
+  box-shadow: unset; }
 
 #Justice {
   height: 100vh !important; }
@@ -1870,6 +2110,9 @@ body {
   height: 100vh !important;
   margin: 0 !important; }
 
+.white {
+  color: white !important; }
+
 .template-grid {
   display: grid;
   max-width: 1040px;
@@ -2062,7 +2305,8 @@ p {
   text-align: center;
   margin: 0 auto; }
 
-#metodologia .intro, p {
+#metodologia .intro,
+p {
   max-width: 850px;
   margin: 0 auto;
   color: white; }
@@ -2079,7 +2323,8 @@ p {
 .txt_right {
   text-align: right; }
 
-.txt_right, .txt_left {
+.txt_right,
+.txt_left {
   padding-top: 35px; }
 
 #metodologia .topicos .txt_left p {
@@ -2236,12 +2481,66 @@ p {
   justify-content: center; }
 
 .scrolling-content {
-  background: linear-gradient(145.3deg, #FF305C 0%, #7427f1 100%);
+  background: linear-gradient(145.3deg, #ff305c 0%, #7427f1 100%);
   transition: background 0.5s ease; }
+
+.panel-buttons .btn-prev,
+.panel-buttons .btn-next {
+  opacity: 0.5; }
+  .panel-buttons .btn-prev i,
+  .panel-buttons .btn-next i {
+    transition: 0.5s; }
+
+.btn-prev:hover, .btn-next:hover {
+  opacity: 1.0; }
 
 .action-button {
   margin-top: 10vh;
   transition: all 1s; }
+
+.panel-buttons .btn-prev::after {
+  content: "";
+  border: 1px solid;
+  margin-left: 25px; }
+.panel-buttons .btn-next::before {
+  content: "";
+  margin-right: 25px; }
+
+.btn-next:hover i, .btn-prev:hover i {
+  font-size: 30px; }
+
+.panel-buttons {
+  margin-top: 0px;
+  bottom: 15vh;
+  transition: all 1s;
+  position: absolute;
+  align-content: center;
+  right: 40.5vw; }
+  @media only screen and (max-width: 1366px) {
+    .panel-buttons {
+      bottom: 6vh;
+      transition: all 1s;
+      position: absolute;
+      align-content: center;
+      right: 38.5vw; } }
+
+.btn-primary {
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: #ff305c;
+  font-weight: 900;
+  width: 194px;
+  height: 43px;
+  font-family: "Muli";
+  font-style: normal;
+  font-size: 20px;
+  border: 0px solid;
+  margin-top: 4vh;
+  transition: 0.5s; }
+
+.btn-primary:hover {
+  margin-top: 5vh;
+  box-shadow: unset; }
 
 .img-topbottom {
   animation-duration: 2s;
