@@ -1,9 +1,9 @@
 @import 'Custom.scss';
-$primary-color: rgb(116, 39, 241);
+$primary-color: #262626;
 
-#Builders{
+#Justice{
     height: 100vh!important;
-    // padding-top: 10vh;
+   
     .img-logo{
         @include justify-center;
         width: 25vw;

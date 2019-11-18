@@ -1,11 +1,18 @@
+@mixin justify-center{
+  display:flex;
+  justify-content: center;
+}
+
 body {
   font-family: Muli;
   font-style: normal;
   width: 100vw;
   overflow-x: hidden;
+  height: 100vh!important;
+  margin: 0!important;
+  // background: linear-gradient(17.97deg, #ff305c 0%, #7427f1 100%);
 }
-
-// Padrão font
+ 
 
 // Padrão font
 
@@ -407,7 +414,13 @@ p {
   text-align: center;
   margin: 0 auto;
   line-height: 200%;
-  height: 6 0vh;
+  height: 60vh;
+  padding-bottom: 10vh;
+}
+
+
+#fecha-intro p{
+  color: 000;
 }
 
 /* MELHOR CAMINHO */
@@ -434,7 +447,7 @@ p {
   width: 90%;
   margin: 0 auto;
   background: white;
-  height: 71vh;
+  height: 80vh;
   padding-top: 20vh;
   margin-top: 40px;
   line-height: 38px;
@@ -447,4 +460,15 @@ p {
 .card-swiper .row {
   display: flex;
   justify-content: center;
+}
+// Scrolling  css default 
+.scrolling-content{
+  background: linear-gradient(145.3deg, #FF305C 0%, #7427f1 100%);
+  transition: background 0.5s ease;
+}
+
+
+.action-button {
+  margin-top: 10vh;
+  transition: all 1s;
 }
