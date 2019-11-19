@@ -1,5 +1,7 @@
 $font-primary: #7427f1;
 
+ 
+
 
 .primary-font{
   color: $font-primary;
@@ -8,7 +10,7 @@ $font-primary: #7427f1;
 #ideathon {
   display: flex;
   justify-content: center;
-  height: 100vh!important;
+  height: 110vh!important;
   padding-top: 10vh;
 
   // background: linear-gradient(145.3deg, #FF305C 0%, $font-primary 100%);
@@ -24,74 +26,20 @@ $font-primary: #7427f1;
   margin-right: auto;
   margin-top: 20vh;
 }
-
-#ideathon  a,  p {
-  font-size: 30px;
-  line-height: 38px;
-  font-weight: 800;
-  text-align: center;
-  line-height: 38px;
-  color: $font-primary;
-}
-
+ 
 .start-jorney{
   margin-top: 5vh;
 }
 
-#ideathon p{
-  font-size: 30px;
-  font-weight: normal!important;
-  // margin-top: 30px;
-  color: $font-primary;
-
-}
+ 
 
 
 #ideathon .slick-list .slick-track .card,
 img, a, p {
   margin: 0 auto;
   text-align: center;
-  color: $font-primary;
-}
 
-// #ideathon .slick-list {
-//   width: 100% !important;
-//   .slick-track {
-//     width: 100% !important;
-//   }
-// }
+}
  
-
-
-#descricao-ideathon{
-    // margin-top: 5vh;
-    p, a{
-        color: #fff;
-        font-weight: normal;
-        line-height: 160%;
-        font-size:20px;
-        @media only screen and (max-width:1366px){
-            font-size: 16px;
-            line-height: 155%;
-        }
-    }
-    .row{
-        margin-top: 10vh;
-        @media only screen and (max-width:1366px){
-            margin-top: 10vh;
-        }
-    }
-
-    .action-button{
-        @media only screen and (max-width:1366px){
-            margin-top: 8vh;
-        }
-    }
-
-
-}
-
-.content-align{
-  margin-top: -6vh;
-}
+ 
 /* ideathon */

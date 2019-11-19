@@ -1,25 +1,35 @@
 @import 'Custom.scss';
 $primary-color: #FF305C;
 
+ .Players-color{
+     color: $primary-color!important;
+     a{
+         color: $primary-color!important;
+     }
+ }
+
+
+ .btn-primary, .btn-2x{
+    width:250px!important
+}
+
+.text-player{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 #Players{
-    height: 100vh!important;
+    height: 110vh!important;
     // padding-top: 10vh;
     .img-logo{
         @include justify-center;
         width: 25vw;
+        // margin-top: 15vh;
     }
-    a, i{
-        color: $primary-color;
-        font-size: 30px;
-        line-height: 38px;
-        font-weight: 800;
-        text-align: center;
-        line-height: 38px;
+
+    .descricao-swiper .img-logo{
+        margin-top: 7vh;
     }
-    p{
-        margin-top: 30px;
-        font-size: 30px;
-        font-weight: normal;
-        color: $primary-color
-    }
+
+
 }

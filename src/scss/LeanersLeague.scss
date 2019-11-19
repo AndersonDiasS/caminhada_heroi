@@ -1,25 +1,26 @@
 @import 'Custom.scss';
 $primary-color: #00DFEC;
 
-#Leaners{
-    height: 100vh!important;
-   
-    .img-logo{
-        @include justify-center;
-        width: 25vw;
-    }
-    a, i{
-        color: $primary-color;
-        font-size: 30px;
-        line-height: 38px;
-        font-weight: 800;
-        text-align: center;
-        line-height: 38px;
-    }
-    p{
-        margin-top: 30px;
-        font-size: 30px;
-        font-weight: normal;
-        color: $primary-color
+
+.Leaners-font{
+    color: $primary-color!important;
+    i{
+        color: $primary-color!important;
     }
 }
+
+#Leaners{
+    display: flex;
+    justify-content: center;
+    height: 110vh!important;
+    padding-top: 10vh;
+   
+    .card {
+        width: 90% !important;
+        background: #fff;
+        height: 95vh;
+      }
+
+
+}
+

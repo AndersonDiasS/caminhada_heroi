@@ -5,6 +5,83 @@ $primary: #ff305c;
   justify-content: center;
 }
 
+
+@mixin btn-padrao {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-weight: 900;
+  width: 194px;
+  height: 43px;
+  font-family: "Muli";
+  font-style: normal;
+  font-size: 20px;
+  border: 0px solid;
+  margin-top: 4vh;
+  transition: 0.5s;
+}
+
+@mixin btn-hover {
+  margin-top: 5vh;
+  box-shadow: unset;
+}
+
+.first-content {
+  font-size: 30px;
+  line-height: 38px;
+  text-align: center;
+  p {
+    font-weight: normal;
+  }
+  a {
+    font-weight: bold;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Muli" !important;
+}
+
+h1 {
+  font-size: calc(2em + 2vw);
+}
+
+h2 {
+  font-size: calc(2em + 1.5vw);
+}
+
+h3 {
+  font-size: calc(1em + 1.25vw);
+}
+
+h4 {
+  font-size: calc(0.8em + 1.25vw);
+}
+
+p {
+  font-size: calc(0.8em + 0.5vw);
+  line-height: calc(1.4em + 0.5vw);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.content {
+  width: 90%;
+  max-width: 1920;
+  margin: 0 auto;
+}
+
+.big-paragraph {
+  font-size: calc(0.8em + 0.7vw);
+  line-height: calc(1.2em + 0.7vw);
+  padding-top: 10vh;
+  text-align: center;
+}
+
 body {
   font-family: Muli;
   font-style: normal;
@@ -73,50 +150,8 @@ body {
   justify-content: center;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Muli" !important;
-}
-
-h1 {
-  font-size: calc(2em + 2vw);
-}
-
-h2 {
-  font-size: calc(2em + 1.5vw);
-}
-
-h3 {
-  font-size: calc(1em + 1.25vw);
-}
-
-h4 {
-  font-size: calc(0.8em + 1.25vw);
-}
-
-p {
-  font-size: calc(0.8em + 0.5vw);
-  line-height: calc(1.4em + 0.5vw);
-}
-
-.text-center {
-  text-align: center;
-}
-
-.content {
-  width: 90%;
-  max-width: 1920;
-  margin: 0 auto;
-}
-
-.big-paragraph {
-  font-size: calc(0.8em + 0.7vw);
-  line-height: calc(1.2em + 0.7vw);
-  padding-top: 10vh;
-  text-align: center;
+.start-jorney {
+  margin-top: 5vh;
 }
 
 /* HEADER */
@@ -477,13 +512,24 @@ p {
     i {
       transition: 0.5s;
     }
-   
   }
-  
 }
 
-.btn-prev:hover, .btn-next:hover{
-  opacity: 1.0;
+.btn-prev:hover,
+.btn-next:hover,
+.btn-start:hover {
+  opacity: 1;
+  i {
+    font-size: 25px;
+  }
+}
+
+.finish .btn-next:hover i {
+  transform: rotate(270deg);
+}
+
+#f-ideathon .action-button .btn-next i {
+  font-size: 30px;
 }
 
 .action-button {
@@ -503,13 +549,15 @@ p {
     // border:1px solid;
     margin-right: 25px;
   }
+  .btn-start::before {
+    content: "";
+    margin-right: 25px;
+  }
 }
 
-.btn-next:hover i, .btn-prev:hover i {
-  font-size: 30px;
-}
-
- 
+// .btn-next:hover i, .btn-prev:hover i, .btn-start:hover i {
+//   font-size: 20px;
+// }
 
 .panel-buttons {
   margin-top: 0px;
@@ -526,22 +574,109 @@ p {
     right: 38.5vw;
   }
 }
+
+.finish {
+  bottom: -25vh;
+  transition: all 1s;
+  position: absolute;
+  width: 400px;
+  align-content: center;
+  right: 12vw;
+  @media only screen and (max-width: 1400px) {
+    right: 12vw;
+    bottom: -13vh;
+  }
+}
+
 .btn-primary {
   background: #ffffff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: $primary;
-  font-weight: 900;
-  width: 194px;
-  height: 43px;
-  font-family: "Muli";
-  font-style: normal;
-  font-size: 20px;
-  border: 0px solid;
-  margin-top: 4vh;
-  transition: 0.5s;
+  @include btn-padrao;
+ 
+}
+
+
+.btn-reverse{
+  background: #F11242;
+  color: #fff;
+  @include btn-padrao;
+  width: 255px;
+ 
+}
+
+.btn-builder{
+  background: #fff;
+  color: #7427F1;
+  @include btn-padrao;
+  width: 255px;
+ 
+}
+
+
+.btn-reverse:hover{
+  @include btn-hover();
 }
 
 .btn-primary:hover {
+  @include btn-hover();
+}
+
+.btn-builder:hover{
+  @include btn-hover();
+}
+
+ .black-text{
+   color: #000!important;
+ }
+
+.descricao-swiper {
+  // margin-top: 5vh;
+  p,
+  a {
+    color: #fff;
+    font-weight: normal;
+    line-height: 160%;
+    font-size: 20px;
+    @media only screen and (max-width: 1366px) {
+      font-size: 16px;
+      line-height: 155%;
+    }
+  }
+  .row {
+    margin-top: 10vh;
+    @media only screen and (max-width: 1366px) {
+      margin-top: 10vh;
+    }
+  }
+
+  .action-button {
+    @media only screen and (max-width: 1366px) {
+      margin-top: 8vh;
+    }
+  }
+}
+
+.content-align {
+  margin-top: -6vh !important;
+}
+
+.div-open {
+  display: none;
+  text-align: center;
   margin-top: 5vh;
-  box-shadow: unset;
+}
+
+.div-open1 {
+  display: none;
+  text-align: center;
+  margin-top: 5vh;
+}
+.img-logo {
+  @include justify-center;
+  width: 25vw;
+}
+
+.little-logo{
+  @include justify-center;
+  width: 15vw;
 }

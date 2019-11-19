@@ -1,25 +1,19 @@
 @import 'Custom.scss';
 $primary-color: rgb(116, 39, 241);
+ 
+.builders-color{
+    color: $primary-color!important;
+    i{
+        color: $primary-color!important;
+    }
+}
 
 #Builders{
-    height: 100vh!important;
+    height: 110vh!important;
     // padding-top: 10vh;
     .img-logo{
         @include justify-center;
         width: 25vw;
     }
-    a, i{
-        color: $primary-color;
-        font-size: 30px;
-        line-height: 38px;
-        font-weight: 800;
-        text-align: center;
-        line-height: 38px;
-    }
-    p{
-        margin-top: 30px;
-        font-size: 30px;
-        font-weight: normal;
-        color: $primary-color
-    }
+
 }

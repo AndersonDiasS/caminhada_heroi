@@ -1,36 +1,26 @@
-// #ideathon - id primeiro swiper
-jQuery('.swiper').slick({
+
+var sliders = {
+  1: {slider: '#ideathon', navprev: '.navideathonprev', navnext: '.navideathonnext'},
+  2: {slider: '#Leaners' , navprev: '.navLeanersprev',  navnext: '.navLeanersnext' },
+  3: {slider: '#Builders', navprev: '.navBuildersprev', navnext: '.navBuildersnext'},
+  4: {slider: '#Players' , navprev: '.navPlayersprev', navnext: '.navPlayersnext'},
+  5: {slider: '#Justice' , navprev: '.navJusticeprev', navnext: '.navJusticenext'}
+};
+
+$.each(sliders, function(){
+  $(this.slider).slick({
     centerMode: true,
-    // centerPadding: '60px',
     slidesToShow: 1,
     slidesToScroll:1,
     infinite: false,
     swipe: false,
-    prevArrow: $(".btn-prev"),
-    nextArrow: $(".btn-next"),
-    // responsive: [
-    //   {
-    //     breakpoint: 768,
-    //     settings: {
-    //       arrows: false,
-    //       centerMode: true,
-    //       centerPadding: '40px',
-    //       slidesToShow: 3
-    //     }
-    //   },
-    //   {
-    //     breakpoint: 480,
-    //     settings: {
-    //       arrows: false,
-    //       centerMode: true,
-    //       centerPadding: '40px',
-    //       slidesToShow: 1
-    //     }
-    //   }
-    // ]
- 
+    // Colocar em um array
+    prevArrow: (this.navprev),
+    nextArrow: (this.navnext), 
   });
  
+});
+  
   // Scrolling - Parametros 
 
 
@@ -52,3 +42,25 @@ jQuery('.swiper').slick({
       });
 
   });
+
+
+  $(document).ready(function(){
+    $("a").click(function(event){
+      var link = $(this);
+      if (link.attr('class').match('.hidden-content'))
+
+       $('.div-close').hide("slow"),
+       $('.div-open').show('slow');
+        
+      else 
+      $('.div-close').show('slow'),
+      $('.div-open').hide('slow');      
+    })
+  })
+
+
+ 
+
+ 
+
+ 
