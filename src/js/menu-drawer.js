@@ -8,7 +8,7 @@ $("#drawer-button").click(function () {
     } else {
        $('#Drawer').animate({'width': 0}, 1500);
      }
-   $('#drawer-button').toggleClass("opened");
+   $('#drawer-button').toggleClass("opened"), 500;
  });
 
 
@@ -18,7 +18,7 @@ $("#drawer-button").click(function () {
      } else{
          $('#Drawer').animate({'width': 500}, 150);
      }
-     $('#drawer-button').toggleClass("opened");
+     $('#drawer-button').toggleClass("opened"), 500;
 
  })
 
@@ -27,7 +27,14 @@ $("#drawer-button").click(function () {
 // Localizar Scroll 
 
 $(window).scroll(function(){
-    if ($("#ideathon").offset().top > $(window).scrollTop()){
-        
-    }
+    var $height = $(window).scrollTop();
+    if ($height = ("#ideathon")){
+    // if ($("#ideathon").offset().top = $(window).scrollTop()){
+        $("#Ideathonm").animate({'opacity': 1}, 100);
+    // }
+}
+        else ($height != ('#ideathon'))
+    //  else ($('#ideathon').offset().top != $(window).scrollTop())
+        $("#Ideathonm").animate({'opacity': 0.5}, 100);
+    
 });

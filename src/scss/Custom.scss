@@ -76,7 +76,7 @@ p {
 }
 
 .big-paragraph {
-  font-size: calc(0.8em + 0.7vw);
+  font-size: calc(0.9em + 0.8vw);
   line-height: calc(1.2em + 0.7vw);
   padding-top: 10vh;
   text-align: center;
@@ -190,6 +190,14 @@ body {
 
 /* INTRO */
 
+#intro{
+  height: auto!important;
+}
+
+.texto p{
+  text-align: left;
+}
+
 #intro .content {
   width: 90%;
   margin: 0 auto;
@@ -296,7 +304,7 @@ body {
 p {
   max-width: 850px;
   margin: 0 auto;
-  color: white;
+  // color: white;
 }
 
 /* #metodologia .topicos {
@@ -447,12 +455,12 @@ p {
 #fecha-intro {
   background-color: #ffffff;
   color: #262626;
-  width: 50%;
+  width: 42%;
   max-width: 1400px;
   text-align: center;
   margin: 0 auto;
   line-height: 200%;
-  height: 60vh;
+  height: 70vh;
   padding-bottom: 10vh;
 }
 
