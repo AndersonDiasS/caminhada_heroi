@@ -24,17 +24,19 @@ $("#drawer-button").click(function () {
 
 // Abrir Drawer
 
-// Localizar Scroll 
+ 
+ 
+var alturas = {};
+$('.section').each(function () {
+  alturas[$(this).prop('id')] = $(this).offset().top; // ex: alturas['section_2'] = 600
+});
 
-$(window).scroll(function(){
-    var $height = $(window).scrollTop();
-    if ($height = ("#ideathon")){
-    // if ($("#ideathon").offset().top = $(window).scrollTop()){
-        $("#Ideathonm").animate({'opacity': 1}, 100);
-    // }
-}
-        else ($height != ('#ideathon'))
-    //  else ($('#ideathon').offset().top != $(window).scrollTop())
-        $("#Ideathonm").animate({'opacity': 0.5}, 100);
-    
+// quando fazemos scoll vamos percorrer o nosso obj alturas e comparar a altura de cada secção com o que já andamos em scroll
+$(window).on('scroll', function() {
+  for(var seccao in alturas) {
+    if($(window).scrollTop() >= alturas[seccao]) {
+      $('a').removeClass('active'); // removemos a classe ative
+      $('a[data-section="' +seccao+ '"]').addClass('active'); // adicionamos a class active ao item do menu cuja data-section é igual ao id da secção que está a uma maior ou igual distancia do topo do que aquela que percorremos com o scroll
+    }
+  }
 });

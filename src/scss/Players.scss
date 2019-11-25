@@ -19,17 +19,13 @@ $primary-color: #FF305C;
 }
 
 #Players{
-    height: 110vh!important;
+    height: 100vh!important;
     // padding-top: 10vh;
     .img-logo{
         @include justify-center;
         width: 25vw;
         // margin-top: 15vh;
     }
-
-    .descricao-swiper .img-logo{
-        margin-top: 7vh;
-    }
-
-
 }
+
+

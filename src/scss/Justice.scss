@@ -24,13 +24,22 @@ $primary-color: #262626;
 
   
 #Justice{
-    height: 110vh!important;
+    height: 100vh!important;
    
     .img-logo{
         @include justify-center;
         width: 25vw;
     }
 
+    .btn-primary{
+      color: #000;
+    }
+
 }
 
 
+#desc-justice{
+   
+    margin-top: 0vh!important;
+ 
+}

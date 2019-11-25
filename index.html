@@ -24,27 +24,27 @@
             <div class="menu-row">
                 <div class="circle-item"></div>
 
-                <a href="#ideathon" class="" id="Ideathonm"> Ideathon </a>
+                <a href="#ideathon" class="" data-section="section_1"> Ideathon </a>
             </div>
 
             <div class="menu-row">
                 <div class="circle-item"></div>
 
-                <a href="#Leaners" class="" id="Leanersm">Leaner's</a>
+                <a href="#Leaners" class="" data-section="section_2">Leaner's</a>
             </div>
 
             <div class="menu-row">
                 <div class="circle-item"></div>
-                <a href="#Builders" class="" id="Buildersm">Builder's</a>
+                <a href="#Builders" class="" data-section="section_3">Builder's</a>
             </div>
 
             <div class="menu-row">
                 <div class="circle-item"></div>
-                <a href="#Players" class="" id="Playersm"> Player's</a>
+                <a href="#Players" class="" data-section="section_4"> Player's</a>
             </div>
             <div class="menu-row">
                 <div class="circle-item"></div>
-                <a href="#Justice" class="" id="Justicem"> Justice league</a>
+                <a href="#Justice" class="" data-section="section_5"> Justice league</a>
             </div>
             <div class="menu-row">
                 <div class="circle-item"></div>
@@ -234,10 +234,11 @@
 
         </section>
         <div class="scrolling-content">
-            <div id="ideathon" class="change swiper" data-background="linear-gradient(111.3deg, rgb(255, 48, 92) 0%, rgb(116, 39, 241) 100%)">
+            <div id="ideathon" class="change swiper"
+                data-background="linear-gradient(111.3deg, rgb(255, 48, 92) 0%, rgb(116, 39, 241) 100%)">
 
                 <div class="card-swiper first-content" id="f-ideathon">
-                    <div class="card">
+                    <div class="card section" id="section_1">
                         <img src="src/images/Ideathon.svg" class="img-responsive">
 
                         <p class="start-jorney primary-font ">O começo da jornada</p>
@@ -245,7 +246,7 @@
                         <div class="text-center action-button">
 
 
-                            <a class="btn-next navideathonnext primary-font ">
+                            <a class="btn-next navideathonnext primary-font "  onclick="change(0)">
                                 Veja mais <i class="fas fa-arrow-circle-right primary-font "></i>
                             </a>
 
@@ -255,32 +256,33 @@
 
 
                 <div class="card-swiper descricao-swiper" id="descricao-ideathon">
-                    <img src="src/images/big-logo.svg" class="img-logo">
+                    <img src="src/images/big-logo.svg" class="little-logo">
                     <p class="white"> o começo da jornada</p>
                     <div class="row div-close">
                         <div class="col-md-3 ">
                             <p class="text-right content-align">
-                                A Learner’s League é uma comunidade para você, que já sabe que é bom em alguma coisa e
-                                quer
-                                transformar isso em um negócio digital, mas não sabe por onde começar.
-                                </ p>
-                                <br><br>
-                                <p class="text-right"> Aqui, você terá contato com outros empreendedores que estão com o
-                                    mesmo objetivo que o seu, além
-                                    de contato com produtores digitais que já atingiram o sucesso e estarão dispostos
-                                    a trocar informações e experiências para que você comece a construir o seu negócio
-                                    digital.
-                                </p>
+                                Você quer sair da rotina padrão de CLT, quer poder passar mais tempo com a sua família,
+                                quer tirar férias de forma mais tranquila e tem vontade para fazer tudo isso acontecer,
+                                só não sabe exatamente como.
+                            </p>
+                            <br><br>
+                            <p class="text-right">
+
+                                Nós queremos te ajudar com isso, mostrando para você qual
+                                é a melhor forma de escapar dessa metodologia de trabalho formal.
+
+                            </p>
                         </div>
 
                         <div class="col-md-3 ">
-                            <p class="text-left "> E para isso, nós apresentamos o programa de imersão online 100%
-                                gratuito, o Ideathon.</p>
+                            <p class="text-left ">
+                                E para isso, nós apresentamos o programa de imersão online 100% gratuito, o Ideathon.
+                            </p>
                             <br><br>
-                            <p class="text-left "> O programa tem como objetivo fazer com que você identifique
-                                exatamente qual é o seu
-                                conhecimento que tem mais potencial de ser lucrativo e aprenda de que maneiras você pode
-                                transformar isso em algo muito maior e rentável, um negócio digital</p>
+                            <p class="text-left ">
+                                O programa tem como objetivo fazer com que você identifique exatamente qual
+                                é o seu conhecimento que tem mais potencial de ser lucrativo e aprenda de que maneiras
+                                você pode transformar isso em algo muito maior e rentável, um negócio digital.</p>
 
                             <button class="btn-primary"> Call to action </button>
                         </div>
@@ -288,37 +290,41 @@
 
                         <div class="text-center action-button panel-buttons">
 
-                            <a class="btn-prev white navideathonprev"><i class="fas fa-arrow-circle-left "></i>
+                            <a class="btn-prev white navideathonprev" onclick="change(0)"><i class="fas fa-arrow-circle-left "></i>
                                 Anterior</a>
 
 
-                            <a class="btn-next white hidden-content ">
-                                Proximo <i class="fas fa-arrow-circle-right "></i>
+                            <a class="btn-next white hidden-content" onclick="change(1)">
+                                    Próximo <i class="fas fa-arrow-circle-right "></i>
                             </a>
 
                         </div>
                     </div>
                     <div class="row div-open">
                         <div class="col-md-6 col-sm-12 ">
-                            <p> Para te ajudar nessa etapa, nós apresentamos um programa especial para você iniciar a
+                            <p> Para te ajudar nessa etapa, nós apresentamos um programa<br> especial para você iniciar
+                                a
                                 sua jornada empreendedora: </p>
 
-                            <img src="src/images/big-logo.svg" class="img-big-logo">
+                            <img src="src/images/big-logo.svg" class="img-big-logo mt-10">
                             <button class="btn-primary"> Call to action </button>
 
 
                             <div class="text-center action-button panel-buttons finish">
 
-                                <a class="btn-prev white"><i class="fas fa-arrow-circle-left "></i> Anterior</a>
+                                <a class="btn-prev white" onclick="change(1)"><i class="fas fa-arrow-circle-left "></i> Anterior</a>
 
 
-                                <a class="btn-next white hidden-content">
-                                    Voltar para o inicio <i class="fas fa-arrow-circle-right "></i>
+                                <a class="btn-next white hidden-content navideathonprev">
+                                    Voltar ao inicio <i class="fas fa-arrow-circle-right "></i>
                                 </a>
 
                             </div>
                         </div>
                     </div>
+
+               
+ 
 
 
                 </div>
@@ -326,14 +332,14 @@
 
             <section id="Leaners" class="change swiper" data-background="#00DFEC">
                 <div class="card-swiper first-content">
-                    <div class="card">
+                    <div class="card section" id="section_2">
                         <img src="src/images/leaners.svg" class="img-logo">
 
                         <p class="start-jorney Leaners-font"> Amadurecendo a ideia e criando um negócio </p>
 
                         <div class="text-center action-button">
 
-                            <a class="btn-next navLeanersnext Leaners-font">
+                            <a class="btn-next navLeanersnext Leaners-font" onclick="change(0)">
                                 Veja mais <i class="fas fa-arrow-circle-right "></i>
                             </a>
 
@@ -365,7 +371,7 @@
                                 quem é membro dessa comunidade. </p>
                             <br><br>
 
-                            <button class="btn-reverse"> Quero começar agora </button>
+                            <button class="btn-primary"> Quero começar agora </button>
                         </div>
 
 
@@ -375,7 +381,7 @@
                                 Anterior</a>
 
 
-                            <a class="btn-next white hidden-content">
+                            <a class="btn-next white hidden-content" onclick="change(1)">
                                 Proximo <i class="fas fa-arrow-circle-right "></i>
                             </a>
 
@@ -384,7 +390,7 @@
 
 
                     <div class="row div-open">
-                        <div class="col-md-6 col-sm-12 ">
+                        <div class="col-md-6 col-sm-12 " id="SparkstartLeaners">
                             <p class=""> Para te ajudar nessa etapa, nós apresentamos um programa especial para você
                                 iniciar a sua jornada empreendedora: </p>
                             <br>
@@ -394,20 +400,20 @@
                             <button class="btn-reverse"> Quero começar agora </button>
 
 
-                            <div class="text-center action-button panel-buttons finish">
+                            <div class="text-center action-button panel-buttons ">
 
                                 <a class="btn-prev white"><i class="fas fa-arrow-circle-left "></i> Anterior</a>
 
 
-                                <a class="btn-next white hidden-content1">
-                                    Voltar para o inicio <i class="fas fa-arrow-circle-right "></i>
+                                <a class="btn-next white hidden-content1" onclick="change(2)">
+                                        Próximo <i class="fas fa-arrow-circle-right "></i>
                                 </a>
 
                             </div>
                         </div>
                     </div>
 
-                    <div class="row div-open1" style="display: none;">
+                    <div class="row div-open1 last-page" style="display: none;">
                         <div class="col-md-6 col-sm-12 ">
                             <p class=""> Para te ajudar nessa etapa, nós apresentamos um programa especial para você
                                 iniciar a sua jornada empreendedora: </p>
@@ -425,7 +431,7 @@
                                 <a class="btn-prev white"><i class="fas fa-arrow-circle-left "></i> Anterior</a>
 
 
-                                <a class="btn-next white hidden-content1">
+                                <a class="btn-next white hidden-content1 navLeanersprev">
                                     Voltar para o inicio <i class="fas fa-arrow-circle-right "></i>
                                 </a>
 
@@ -442,7 +448,7 @@
 
             <section id="Builders" class="change swiper" data-background="#7427F1">
                 <div class="card-swiper  first-content">
-                    <div class="card">
+                    <div class="card section" id="section_3">
                         <img src="src/images/builders.svg" class="img-logo">
 
                         <p class="start-jorney builders-color"> Consolidando o negócio e melhorando resultados </p>
@@ -459,7 +465,7 @@
 
                 <div class="card-swiper descricao-swiper code" id="">
                     <img src="src/images/b-logo.svg" class="little-logo" style="width: 5vw; margin-top: 80px">
-                    <img src="src/images/Builder’s.svg" class="img-logo" style="margin-top: 20px;">
+                    <img src="src/images/Builder’s.svg" class="little-logo" style="margin-top: 20px;">
                     <p> Amadurecendo a ideia e criando um negócio</p>
                     <div class="row div-close">
 
@@ -492,14 +498,15 @@
                                 Anterior</a>
 
 
-                            <a class="btn-next white hidden-content">
-                                Voltar para o inicio <i class="fas fa-arrow-circle-right "></i>
-                            </a>
+                                <a class="btn-next white hidden-content" onclick="change(1)">
+                                        Proximo <i class="fas fa-arrow-circle-right "></i>
+                                    </a>
+        
 
                         </div>
 
                     </div>
-                    <div class="row div-open">
+                    <div class="row div-open" style="display: none;">
                         <div class="col-md-4 ">
                             <img src="src/images/sparkfunnels.svg">
                             <br>
@@ -539,12 +546,35 @@
                                 Anterior</a>
 
 
-                            <a class="btn-next white hidden-content">
-                                Proximo <i class="fas fa-arrow-circle-right "></i>
-                            </a>
-
+                        
+                                <a class="btn-next white hidden-content1" onclick="change(2)">
+                                        Próximo <i class="fas fa-arrow-circle-right "></i>
+                                </a>
                         </div>
                     </div>
+
+                    <div class="row div-open1 last-page" style="display: none;">
+                            <div class="col-md-6 col-sm-12 ">
+                                <h4 class="white" style="font-weight: bold;"> 
+                                    O principal objetivo dessa comunidade é fazer com que você adquira conhecimento suficiente
+                                     para escalar o seu negócio digital e passe a ter resultados significativos.
+                                </h4>
+                              
+    
+                                <button class="btn-builder m-10"> Quero começar agora </button>
+    
+                                <div class="text-center action-button panel-buttons finish">
+    
+                                    <a class="btn-prev white"><i class="fas fa-arrow-circle-left "></i> Anterior</a>
+    
+    
+                                    <a class="btn-next white hidden-content1 navLeanersprev">
+                                        Voltar para o inicio <i class="fas fa-arrow-circle-right "></i>
+                                    </a>
+    
+                                </div>
+                            </div>
+                        </div>
 
 
 
@@ -558,7 +588,7 @@
 
             <section id="Players" class="change swiper" data-background="#FF305C">
                 <div class="card-swiper first-content">
-                    <div class="card">
+                    <div class="card section" id="section_4">
                         <img src="src/images/Players.svg" class="img-logo">
 
                         <p class="start-jorney Players-color"> Tomando o seu empreendimento ainda maior </p>
@@ -573,7 +603,7 @@
                     </div>
                 </div>
                 <div class="card-swiper descricao-swiper" id="">
-                    <img src="src/images/Logo_players.svg" class="img-logo">
+                    <img src="src/images/Logo_players.svg" class="little-logo">
                     <p> Tomando o seu empreendimento ainda maior</p>
 
                     <div class="row div-close">
@@ -607,7 +637,7 @@
 
 
                             <a class="btn-next white hidden-content">
-                                Proximo <i class="fas fa-arrow-circle-right "></i>
+                                    Próximo <i class="fas fa-arrow-circle-right "></i>
                             </a>
 
                         </div>
@@ -650,7 +680,7 @@
 
             <section id="Justice" class="change swiper" data-background="#262626">
                 <div class="card-swiper first-content">
-                    <div class="card">
+                    <div class="card section" id="section_5">
                         <img src="src/images/Justice.svg" class="img-logo">
 
                         <p class="start-jorney"> Seu empreendimento já é grande, mas pode ser maior </p>
@@ -664,33 +694,26 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-swiper descricao-swiper" id="">
-                    <img src="src/images/big-logo.svg" class="img-logo">
-                    <p> o começo da jornada</p>
+                <div class="card-swiper descricao-swiper">
+                    <img src="src/images/Logo-Justice.png" class="little-logo">
+                    <p> Seu empreendimento ja é grande, mas pode ser maior</p>
                     <div class="row div-close">
                         <div class="col-md-3 ">
                             <p class="text-right content-align">
-                                A Learner’s League é uma comunidade para você, que já sabe que é bom em alguma coisa e
-                                quer
-                                transformar isso em um negócio digital, mas não sabe por onde começar.
-                                </ p>
-                                <br><br>
-                                <p class="text-right"> Aqui, você terá contato com outros empreendedores que estão com o
-                                    mesmo objetivo que o seu, além
-                                    de contato com produtores digitais que já atingiram o sucesso e estarão dispostos
-                                    a trocar informações e experiências para que você comece a construir o seu negócio
-                                    digital.
-                                </p>
+                                Essa comunidade é para você que já tem um negócio espetacular.
+                                Mas não consegue se acomodar com o que já conquistou e quer ir além.
+                            </p>
+
                         </div>
 
                         <div class="col-md-3 ">
-                            <p class="text-left "> E para isso, nós apresentamos o programa de imersão online 100%
-                                gratuito, o Ideathon.</p>
-                            <br><br>
-                            <p class="text-left "> O programa tem como objetivo fazer com que você identifique
-                                exatamente qual é o seu
-                                conhecimento que tem mais potencial de ser lucrativo e aprenda de que maneiras você pode
-                                transformar isso em algo muito maior e rentável, um negócio digital</p>
+
+                            <p class="text-left ">
+                                A Justice League vai permitir que você tenha contato com outros super heróis do
+                                empreendedorismo,
+                                para que você crie uma rede de contatos completa de pessoas extremamente competentes e
+                                que também
+                                atingiram o sucesso.</p>
 
                             <button class="btn-primary"> Call to action </button>
                         </div>
@@ -703,17 +726,28 @@
 
 
                             <a class="btn-next white hidden-content">
-                                Proximo <i class="fas fa-arrow-circle-right "></i>
+                                    Próximo <i class="fas fa-arrow-circle-right "></i>
                             </a>
 
                         </div>
                     </div>
-                    <div class="row div-open">
+                    <div class="row div-open" id="desc-justice">
                         <div class="col-md-6 col-sm-12 ">
-                            <p> Para te ajudar nessa etapa, nós apresentamos um programa especial para você iniciar a
-                                sua jornada empreendedora: </p>
+                            <p class="big-paragraph ">
+                                Sabemos que nessa etapa você vai precisar da ajuda de um conjunto de ferramentas para
+                                que
+                                possa controlar todos os âmbitos do seu negócio digital com precisão e assertividade,
+                                para isso, apresentamos o Spark Pro.
+                            </p>
+                            <br>
+                            <img src="src/images/sparkpro.svg" class="img-big-logo m-10">
 
-                            <img src="src/images/big-logo.svg" class="img-big-logo">
+                            <p class="m-30">
+                                Área de membros que conta com suporte personalizado, funcionalidades especiais e
+                                ferramentas robustas,
+                                que são raras de encontrar no mercado e que vão te ajudar a controlar tudo o que seja
+                                preciso.
+                            </p>
                             <button class="btn-primary"> Call to action </button>
 
 
@@ -735,14 +769,32 @@
                 </div>
             </section>
 
+            <section id="fechamento" class="change" data-background="#FF305C">
+                <div class="row justify-center wow FadeIn" data-wow-duration="2s" data-wow-delay="1s">
+                    <div class="col-md-6 col-sm-12 text-center " >
+                        <h3>
+                            Não importa em que parte da jornada você esteja, sempre há espaço para aprendizado e
+                            crescimento.<br>
+                            E para isso, a HeroSpark estará do seu lado, sempre disposta a te ajudar com tudo o que você
+                            precisar.
+                        </h3>
+                    </div>
+
+
+                </div>
+            </section>
+
+
         </div>
 
     </main>
     <script src="src/js/jquery.js"></script>
     <script src="src/js/jquery.scrolling.min.js"></script>
     <script src="src/js/slick.min.js"></script>
+    <script src="src/js/wow.js"></script>
     <script src="src/js/custom.js"></script>
     <script src="src/js/menu-drawer.js"></script>
+   
 
 </body>
 

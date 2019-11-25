@@ -36,6 +36,18 @@ $primary: #ff305c;
   }
 }
 
+
+body {
+  font-family: Muli;
+  font-style: normal;
+  width: 100vw;
+  overflow-x: hidden;
+  height: 100vh !important;
+  margin: 0 !important;
+  // background: linear-gradient(17.97deg, #ff305c 0%, #7427f1 100%);
+}
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -65,94 +77,8 @@ p {
   line-height: calc(1.4em + 0.5vw);
 }
 
-.text-center {
-  text-align: center;
-}
 
-.content {
-  width: 90%;
-  max-width: 1920;
-  margin: 0 auto;
-}
 
-.big-paragraph {
-  font-size: calc(0.9em + 0.8vw);
-  line-height: calc(1.2em + 0.7vw);
-  padding-top: 10vh;
-  text-align: center;
-}
-
-body {
-  font-family: Muli;
-  font-style: normal;
-  width: 100vw;
-  overflow-x: hidden;
-  height: 100vh !important;
-  margin: 0 !important;
-  // background: linear-gradient(17.97deg, #ff305c 0%, #7427f1 100%);
-}
-
-.white {
-  color: white !important;
-}
-
-// Padrão font
-
-.template-grid {
-  display: grid;
-  max-width: 1040px;
-  margin: 0 auto;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 1em;
-  background: lightcyan;
-}
-
-.grid-item {
-  height: 20vh;
-  background-color: goldenrod;
-}
-
-.img_topicos {
-  display: flex;
-  justify-content: center;
-}
-
-.f-l {
-  float: left;
-  margin-left: 15px;
-  margin-right: 15px;
-}
-
-.f-r {
-  float: right;
-}
-
-.text-left {
-  text-align: left;
-}
-
-.text-right {
-  text-align: right;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.img_topicos img {
-  box-shadow: 0px 8px 10px rgba(38, 38, 38, 0.2);
-  border-radius: 50%;
-}
-
-.topicos .row {
-  margin-top: 20px;
-  margin-bottom: 60px;
-  justify-content: center;
-}
-
-.start-jorney {
-  margin-top: 5vh;
-}
 
 /* HEADER */
 
@@ -225,7 +151,6 @@ body {
 
 #intro .image {
   grid-column: 8 / span 12;
-  // background-image: url("../images/intro_ilustra01.png");
 }
 
 /* ABRE METODOLOGIA */
@@ -307,11 +232,7 @@ p {
   // color: white;
 }
 
-/* #metodologia .topicos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
-    padding-bottom: 20vh;
- } */
+ 
 
 #metodologia .topicos .txt_right p {
   text-align: right;
@@ -502,6 +423,10 @@ p {
   width: 250px;
 }
 
+.justify-center{
+  @include justify-center;
+}
+
 .card-swiper .row {
   display: flex;
   justify-content: center;
@@ -541,7 +466,7 @@ p {
 }
 
 .action-button {
-  margin-top: 10vh;
+ 
   transition: all 1s;
 }
 
@@ -568,32 +493,30 @@ p {
 // }
 
 .panel-buttons {
-  margin-top: 0px;
-  bottom: 15vh;
+ 
+  bottom: 10vh;
   transition: all 1s;
   position: absolute;
   align-content: center;
-  right: 40.5vw;
+  width: 100%;
+  
   @media only screen and (max-width: 1366px) {
-    bottom: 6vh;
+    bottom: 15vh;
     transition: all 1s;
     position: absolute;
     align-content: center;
-    right: 38.5vw;
+   
   }
 }
 
 .finish {
-  bottom: -25vh;
+  bottom: -13vh;
   transition: all 1s;
   position: absolute;
-  width: 400px;
+  width: 100%;
   align-content: center;
-  right: 12vw;
-  @media only screen and (max-width: 1400px) {
-    right: 12vw;
-    bottom: -13vh;
-  }
+ 
+ 
 }
 
 .btn-primary {
@@ -638,7 +561,7 @@ p {
  }
 
 .descricao-swiper {
-  // margin-top: 5vh;
+
   p,
   a {
     color: #fff;
@@ -650,24 +573,32 @@ p {
       line-height: 155%;
     }
   }
+
+  .img-logo , .little-logo{
+    margin-top: 7vh;
+}
   .row {
     margin-top: 10vh;
     @media only screen and (max-width: 1366px) {
-      margin-top: 10vh;
+      margin-top: 7vh;
     }
   }
 
-  .action-button {
-    @media only screen and (max-width: 1366px) {
-      margin-top: 8vh;
-    }
-  }
 }
 
 .content-align {
-  margin-top: -6vh !important;
+  margin-top: -3vh !important;
 }
 
+
+.mt-10{
+  margin-top: 10px;
+}
+
+.m-30{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 .div-open {
   display: none;
   text-align: center;
@@ -687,4 +618,116 @@ p {
 .little-logo{
   @include justify-center;
   width: 15vw;
+}
+
+#SparkstartLeaners{
+    .panel-buttons{
+      bottom: -20vh;
+    }
+}
+
+.last-page{
+    .finish{
+      bottom:-40vh;
+    }
+}
+
+
+// Util 
+
+
+.text-center {
+  text-align: center;
+}
+
+.content {
+  width: 90%;
+  max-width: 1920;
+  margin: 0 auto;
+}
+
+.big-paragraph {
+  font-size: calc(0.9em + 0.8vw);
+  line-height: calc(1.2em + 0.7vw);
+  padding-top: 10vh;
+  text-align: center;
+}
+
+.white {
+  color: white !important;
+}
+
+// Padrão font
+
+.template-grid {
+  display: grid;
+  max-width: 1040px;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1em;
+  background: lightcyan;
+}
+
+.grid-item {
+  height: 20vh;
+  background-color: goldenrod;
+}
+
+.img_topicos {
+  display: flex;
+  justify-content: center;
+}
+
+.f-l {
+  float: left;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.f-r {
+  float: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.img_topicos img {
+  box-shadow: 0px 8px 10px rgba(38, 38, 38, 0.2);
+  border-radius: 50%;
+}
+
+.topicos .row {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  justify-content: center;
+}
+
+.start-jorney {
+  margin-top: 5vh;
+}
+
+// Util 
+
+
+
+#fechamento{
+  height: 100vh;
+  color: white;
+   h3{
+     font-weight: 200;
+     line-height: 46px;
+   }
+
+   div{
+     margin-top: 30vh;
+   }
 }
