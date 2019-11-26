@@ -248,6 +248,10 @@ p {
   padding-top: 35px;
 }
 
+.swiper-helper{
+  height: 150px;
+}
+
 #metodologia .topicos .txt_left p {
   text-align: left;
   color: white;
@@ -301,7 +305,7 @@ p {
   background-color: #262626;
   color: white;
   clip-path: polygon(0 10%, 100% 0, 100% 95%, 0 100%);
-  margin-top: -18vh;
+  margin-top: -23vh;
 }
 
 #grupo-empreendedores .content h3 {
@@ -415,8 +419,11 @@ p {
   background: white;
   height: 80vh;
   padding-top: 20vh;
-  margin-top: 40px;
   line-height: 38px;
+  height: 70vh;
+  margin-top: 5vh!important;
+
+  box-shadow:0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19)
 }
 
 .img-logo {
@@ -580,7 +587,7 @@ p {
   .row {
     margin-top: 10vh;
     @media only screen and (max-width: 1366px) {
-      margin-top: 7vh;
+      margin-top: 10vh;
     }
   }
 
@@ -597,7 +604,7 @@ p {
 
 .m-30{
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 .div-open {
   display: none;
@@ -628,10 +635,17 @@ p {
 
 .last-page{
     .finish{
-      bottom:-40vh;
+      bottom: -25vh;
     }
 }
 
+#desc-justice{
+  div{
+  .justice-finish{
+    bottom: -15vh;
+  }
+}
+}
 
 // Util 
 
@@ -730,4 +744,14 @@ p {
    div{
      margin-top: 30vh;
    }
+}
+
+
+.first-content{
+  .card, .section{
+      .action-button{
+        margin-top: 10vh;
+
+      }
+}
 }

@@ -24,19 +24,37 @@ $("#drawer-button").click(function () {
 
 // Abrir Drawer
 
- 
- 
-var alturas = {};
-$('.section').each(function () {
-  alturas[$(this).prop('id')] = $(this).offset().top; // ex: alturas['section_2'] = 600
-});
 
-// quando fazemos scoll vamos percorrer o nosso obj alturas e comparar a altura de cada secção com o que já andamos em scroll
-$(window).on('scroll', function() {
-  for(var seccao in alturas) {
-    if($(window).scrollTop() >= alturas[seccao]) {
-      $('a').removeClass('active'); // removemos a classe ative
-      $('a[data-section="' +seccao+ '"]').addClass('active'); // adicionamos a class active ao item do menu cuja data-section é igual ao id da secção que está a uma maior ou igual distancia do topo do que aquela que percorremos com o scroll
-    }
+$('menu-row a').on('click', function() {
+
+    var scrollAnchor = $(this).attr('data-scroll'),
+        scrollPoint = $('section[data-anchor="' + scrollAnchor + '"]').offset().top - 28;
+
+    $('body,html').animate({
+        scrollTop: scrollPoint
+    }, 500);
+
+    return false;
+
+})
+
+ 
+$(window).scroll(function() {
+  var windscroll = $(window).scrollTop();
+  if (windscroll >= 100) {
+      // $('nav').addClass('fixed');
+      $('.scrolling-content section').each(function(i) {
+          if ($(this).position().top <= windscroll - 100) {
+              $('menu-row a.active').removeClass('active');
+              $('menu-row a').eq(i).addClass('active');
+          }
+      });
+
+  } else {
+
+      // $('nav').removeClass('fixed');
+      $('menu-row a.active').removeClass('active');
+      $('menu-row a:first').addClass('active');
   }
-});
+
+}).scroll()

@@ -24,7 +24,7 @@ $primary-color: #262626;
 
   
 #Justice{
-    height: 100vh!important;
+    height: 125vh!important;
    
     .img-logo{
         @include justify-center;
@@ -35,11 +35,42 @@ $primary-color: #262626;
       color: #000;
     }
 
+    .div-open{
+        .panel-buttons{
+        bottom: -8vh;
+        @media(max-width: 1366px){
+          bottom: -15vh;
+        }
+      }
+    }
+
+    .div-close{
+        .panel-buttons{
+          bottom: 3vh;
+        }
+    }
+
 }
 
 
 #desc-justice{
-   
-    margin-top: 0vh!important;
- 
+
+
+  .div-close{
+    .panel-buttons{
+    bottom: 3vh;
+    }
+  }
+
+  .finish{
+    bottom: -35vh;
+  }
+    margin-top: 0vh!important; 
+
+
+    .div-open1{
+      .finish{
+        bottom: -20vh;
+      }
+    }
 }

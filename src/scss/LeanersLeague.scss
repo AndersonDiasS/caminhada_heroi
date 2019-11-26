@@ -12,14 +12,10 @@ $primary-color: #00DFEC;
 #Leaners{
     display: flex;
     justify-content: center;
-    height: 110vh!important;
+    height: 125vh!important;
     padding-top: 10vh;
    
-    .card {
-        width: 90% !important;
-        background: #fff;
-        height: 95vh;
-      }
+
       .btn-primary{
           color: $primary-color;
       }

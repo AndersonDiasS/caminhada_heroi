@@ -10,16 +10,17 @@ $font-primary: #7427f1;
 #ideathon {
   display: flex;
   justify-content: center;
-  height: 110vh!important;
+  height: 125vh !important;
   padding-top: 10vh;
+  
 
   // background: linear-gradient(145.3deg, #FF305C 0%, $font-primary 100%);
 }
-#ideathon .card {
-  width: 90% !important;
-  background: #fff;
-  height: 95vh;
-}
+// #ideathon .card {
+//   width: 90% !important;
+//   background: #fff;
+//   height: 95vh;
+// }
 
 .ideathon .card-swiper img {
   margin-left: auto;

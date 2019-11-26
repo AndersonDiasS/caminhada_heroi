@@ -1,6 +1,5 @@
 new WOW().init();
-
-
+// Leagues 
 var sliders = {
   1: {slider: '#ideathon', navprev: '.navideathonprev', navnext: '.navideathonnext'},
   2: {slider: '#Leaners' , navprev: '.navLeanersprev',  navnext: '.navLeanersnext' },
@@ -22,6 +21,22 @@ $.each(sliders, function(){
   });
  
 });
+
+// TEXT SWIPER 
+
+$('.swiper-helper').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  dots: true,
+  arrows: false,
+  autoplay: true,
+  autosplayspeed: 2000
+
+});
+
+
+
   
   // Scrolling - Parametros 
 
@@ -44,47 +59,33 @@ $.each(sliders, function(){
       });
 
   });
-
-
-  // $(document).ready(function(){
-  //   $("a").click(function(event){
-  //     var link = $(this);
-  //     if (link.attr('class').match('.hidden-content'))
-
-  //      $('.div-close').hide("slow"),
-  //      $('.div-open').show('slow');
-        
-  //     else 
-  //     $('.div-close').show('slow'),
-  //     $('.div-open').hide('slow');      
-  //   })
-  // })
+ 
  
   function change(step){
     switch(step) {
       case 0:
-        alert(0);
+        // alert(0);
         $('.div-close').show("slow"),
         $('.div-open').hide('slow'),
         $('.div-open1').hide('slow');  
         $('.div-open2').hide('slow');  
         break;
       case 1:
-        alert(1);
+        // alert(1);
         $('.div-close').hide("slow"),
         $('.div-open').show('slow'),
         $('.div-open1').hide('slow');  
         $('.div-open2').hide('slow');  
         break;
       case 2:
-        alert(2);
+        // alert(2);
         $('.div-open').hide('slow'), 
         $('.div-close').hide('slow'),  
         $('.div-open1').show('slow');  
         $('.div-open2').hide('slow');  
         break;
         case 3:
-          alert(3);
+          // alert(3);
           $('.div-open').hide('slow'), 
           $('.div-close').hide('slow'),  
           $('.div-open1').hide('slow');  
