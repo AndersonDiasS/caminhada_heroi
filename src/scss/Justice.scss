@@ -38,17 +38,18 @@ $primary-color: #262626;
     .div-open{
         .panel-buttons{
         bottom: -8vh;
+        left: 0;
+        right: 0;
         @media(max-width: 1366px){
           bottom: -15vh;
+          left: 0;
+          right: 0;
         }
       }
     }
 
-    .div-close{
-        .panel-buttons{
-          bottom: 3vh;
-        }
-    }
+ 
+ 
 
 }
 

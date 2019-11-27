@@ -1,0 +1,135 @@
+@media (min-width: 1200px) {
+  .topicosmobi {
+    display: none;
+  }
+}
+// 1200 a 760
+@media (max-width: 1150px) {
+  .container {
+    width: 100% !important;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: unset;
+    padding-right: unset;
+  }
+
+  #main {
+    transition: margin-left 0.5s;
+    padding: 0px;
+    width: 100%;
+  }
+  #header {
+    width: 102% !important;
+    .content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+      grid-column-gap: 3vw;
+      padding-top: 0vh;
+    }
+
+    .left {
+      text-align: center;
+    }
+
+    .right {
+      text-align: center;
+      h1 {
+        text-align: center;
+      }
+    }
+  }
+
+  #intro {
+    .texto {
+      padding-right: 5%;
+      padding-top: 10%;
+      grid-column: 1 / span 5;
+    }
+    .image {
+      grid-column: 6 / span 12;
+    }
+  }
+
+  #abre-metodologia {
+    padding-bottom: 56vh;
+    .content {
+      .image_01 {
+        img {
+          width: 50%;
+        }
+        .p-item2c2 {
+          position: absolute;
+          margin-top: 10vh;
+          margin-left: 60vh;
+          z-index: 10;
+        }
+      }
+    }
+    .align-right {
+      display: grid;
+      text-align: right;
+      padding-top: 50%;
+      font-weight: 900;
+      vertical-align: middle;
+      color: white;
+      background: -webkit-linear-gradient(top, #7427f1, #00dfec);
+    }
+
+    .vw-item1 {
+      position: absolute;
+      margin-top: 0vh;
+      z-index: 10;
+      right: 9vh;
+    }
+
+    .vw-item2 {
+      position: absolute;
+      margin-top: -30vh;
+      z-index: 2;
+      background-repeat: no-repeat;
+      left: 15vh;
+    }
+  }
+
+  .topicos {
+    display: none;
+  }
+
+  .topicosmobi {
+    width: 100%;
+    .swiper-helper {
+      height: 250px;
+      .slick-dots {
+        position: absolute;
+        bottom: -15px;
+        list-style: none;
+        display: block;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+      }
+    }
+  }
+
+  #podemos-te-ajudar {
+    .swiper-helper {
+      .slick-dots {
+        bottom: -155px;
+      }
+    }
+  }
+
+  #fecha-intro {
+    height: 95vh;
+  }
+
+  .card {
+    margin-top: 2vh;
+  }
+
+  .last-page .finish{
+    bottom: -10vh;
+
+  }
+}

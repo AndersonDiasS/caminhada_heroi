@@ -31,7 +31,20 @@ $('.swiper-helper').slick({
   dots: true,
   arrows: false,
   autoplay: true,
-  autosplayspeed: 2000
+  autosplayspeed: 2000,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+        arrows: false
+      }
+    }
+     
+    ]
 
 });
 

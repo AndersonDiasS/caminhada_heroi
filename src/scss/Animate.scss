@@ -1,8 +1,23 @@
+@mixin top-bottom{
+    animation-duration: 4s;
+    animation-name: moveTop;
+    animation-iteration-count: infinite;
+}
+
 .img-topbottom{
     animation-duration: 2s;
     animation-name: moveTop;
     animation-iteration-count: infinite;
+    position: absolute;
+    left: 48%;
+    top: 85vh;
 }
+
+.topbottom{
+@include top-bottom
+}
+
+
 
 @keyframes scaler {
   100% {

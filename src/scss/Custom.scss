@@ -70,6 +70,7 @@ h3 {
 
 h4 {
   font-size: calc(0.8em + 1.25vw);
+  line-height: calc(0.8em + 1.25vw);
 }
 
 p {
@@ -501,19 +502,12 @@ p {
 
 .panel-buttons {
  
-  bottom: 10vh;
-  transition: all 1s;
-  position: absolute;
-  align-content: center;
-  width: 100%;
-  
-  @media only screen and (max-width: 1366px) {
-    bottom: 15vh;
+  bottom: 25vh;
     transition: all 1s;
     position: absolute;
     align-content: center;
-   
-  }
+  
+ 
 }
 
 .finish {
@@ -629,13 +623,29 @@ p {
 
 #SparkstartLeaners{
     .panel-buttons{
-      bottom: -20vh;
+      bottom: -32vh;
+      left: 0px;
+      right: 0px;
     }
 }
 
+#LeanersLastpage{
+   .finish{
+    bottom: -40vh;
+  }
+}
+
+.content-builder{
+    .panel-buttons{
+      bottom: 25vh;
+    }
+
+}
+
+
 .last-page{
     .finish{
-      bottom: -25vh;
+      bottom: -20vh;
     }
 }
 
