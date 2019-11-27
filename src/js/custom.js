@@ -98,3 +98,6 @@ $('.swiper-helper').slick({
 
 
  
+// #Parallax
+
+var rellax = new Rellax('.rellax');

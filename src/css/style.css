@@ -135,7 +135,7 @@ p {
 
 #abre-metodologia .image_01 {
   height: 100%;
-  width: 50%;
+  width: 100%;
   background: linear-gradient(0deg, #ff305c 0%, #7427f1 100%); }
 
 /* METODOLOGIA */
@@ -586,6 +586,40 @@ p {
 
 .first-content .card .action-button, .first-content .section .action-button {
   margin-top: 10vh; }
+
+.parallax__container {
+  position: absolute;
+  top: 103vh;
+  bottom: 0; }
+
+.background-image {
+  background-image: url("../images/parallax-pac/camada3conj1.png");
+  width: 80vh;
+  height: 90vh;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: scaler 1s ease-out;
+  animation-fill-mode: backwards;
+  margin-top: 10vh;
+  margin-left: 15vh; }
+
+.p-item2 {
+  position: absolute;
+  margin-top: 0vh;
+  z-index: 5; }
+
+.p-item1 {
+  position: absolute;
+  margin-top: 0vh;
+  margin-left: 2vh;
+  z-index: 10; }
+
+.p-item2c2 {
+  position: absolute;
+  margin-top: 0vh;
+  margin-left: 35vh;
+  z-index: 10; }
 
 .builders-color {
   color: #7427f1 !important; }
@@ -735,7 +769,7 @@ p {
 
 #abre-metodologia .image_01 {
   height: 100%;
-  width: 50%;
+  width: 100%;
   background: linear-gradient(0deg, #ff305c 0%, #7427f1 100%); }
 
 /* METODOLOGIA */
@@ -1186,6 +1220,40 @@ p {
 
 .first-content .card .action-button, .first-content .section .action-button {
   margin-top: 10vh; }
+
+.parallax__container {
+  position: absolute;
+  top: 103vh;
+  bottom: 0; }
+
+.background-image {
+  background-image: url("../images/parallax-pac/camada3conj1.png");
+  width: 80vh;
+  height: 90vh;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: scaler 1s ease-out;
+  animation-fill-mode: backwards;
+  margin-top: 10vh;
+  margin-left: 15vh; }
+
+.p-item2 {
+  position: absolute;
+  margin-top: 0vh;
+  z-index: 5; }
+
+.p-item1 {
+  position: absolute;
+  margin-top: 0vh;
+  margin-left: 2vh;
+  z-index: 10; }
+
+.p-item2c2 {
+  position: absolute;
+  margin-top: 0vh;
+  margin-left: 35vh;
+  z-index: 10; }
 
 .Leaners-font {
   color: #00DFEC !important; }
@@ -1336,7 +1404,7 @@ p {
 
 #abre-metodologia .image_01 {
   height: 100%;
-  width: 50%;
+  width: 100%;
   background: linear-gradient(0deg, #ff305c 0%, #7427f1 100%); }
 
 /* METODOLOGIA */
@@ -1787,6 +1855,40 @@ p {
 
 .first-content .card .action-button, .first-content .section .action-button {
   margin-top: 10vh; }
+
+.parallax__container {
+  position: absolute;
+  top: 103vh;
+  bottom: 0; }
+
+.background-image {
+  background-image: url("../images/parallax-pac/camada3conj1.png");
+  width: 80vh;
+  height: 90vh;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: scaler 1s ease-out;
+  animation-fill-mode: backwards;
+  margin-top: 10vh;
+  margin-left: 15vh; }
+
+.p-item2 {
+  position: absolute;
+  margin-top: 0vh;
+  z-index: 5; }
+
+.p-item1 {
+  position: absolute;
+  margin-top: 0vh;
+  margin-left: 2vh;
+  z-index: 10; }
+
+.p-item2c2 {
+  position: absolute;
+  margin-top: 0vh;
+  margin-left: 35vh;
+  z-index: 10; }
 
 .Players-color {
   color: #FF305C !important; }
@@ -1967,7 +2069,7 @@ p {
 
 #abre-metodologia .image_01 {
   height: 100%;
-  width: 50%;
+  width: 100%;
   background: linear-gradient(0deg, #ff305c 0%, #7427f1 100%); }
 
 /* METODOLOGIA */
@@ -2418,6 +2520,40 @@ p {
 
 .first-content .card .action-button, .first-content .section .action-button {
   margin-top: 10vh; }
+
+.parallax__container {
+  position: absolute;
+  top: 103vh;
+  bottom: 0; }
+
+.background-image {
+  background-image: url("../images/parallax-pac/camada3conj1.png");
+  width: 80vh;
+  height: 90vh;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: scaler 1s ease-out;
+  animation-fill-mode: backwards;
+  margin-top: 10vh;
+  margin-left: 15vh; }
+
+.p-item2 {
+  position: absolute;
+  margin-top: 0vh;
+  z-index: 5; }
+
+.p-item1 {
+  position: absolute;
+  margin-top: 0vh;
+  margin-left: 2vh;
+  z-index: 10; }
+
+.p-item2c2 {
+  position: absolute;
+  margin-top: 0vh;
+  margin-left: 35vh;
+  z-index: 10; }
 
 .justice-color {
   color: #262626 !important; }
@@ -2821,7 +2957,7 @@ p {
 
 #abre-metodologia .image_01 {
   height: 100%;
-  width: 50%;
+  width: 100%;
   background: linear-gradient(0deg, #ff305c 0%, #7427f1 100%); }
 
 /* METODOLOGIA */
@@ -3273,6 +3409,40 @@ p {
 .first-content .card .action-button, .first-content .section .action-button {
   margin-top: 10vh; }
 
+.parallax__container {
+  position: absolute;
+  top: 103vh;
+  bottom: 0; }
+
+.background-image {
+  background-image: url("../images/parallax-pac/camada3conj1.png");
+  width: 80vh;
+  height: 90vh;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: scaler 1s ease-out;
+  animation-fill-mode: backwards;
+  margin-top: 10vh;
+  margin-left: 15vh; }
+
+.p-item2 {
+  position: absolute;
+  margin-top: 0vh;
+  z-index: 5; }
+
+.p-item1 {
+  position: absolute;
+  margin-top: 0vh;
+  margin-left: 2vh;
+  z-index: 10; }
+
+.p-item2c2 {
+  position: absolute;
+  margin-top: 0vh;
+  margin-left: 35vh;
+  z-index: 10; }
+
 /* The side navigation menu */
 .sidenav {
   height: 100%;
@@ -3375,6 +3545,10 @@ p {
   animation-name: moveTop;
   animation-iteration-count: infinite; }
 
+@keyframes scaler {
+  100% {
+    transform: scale3d(1, 1, 1);
+    opacity: 1; } }
 @keyframes moveTop {
   0% {
     top: 90vh; }
