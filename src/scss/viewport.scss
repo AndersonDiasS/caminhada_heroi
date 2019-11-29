@@ -16,7 +16,7 @@
   #main {
     transition: margin-left 0.5s;
     padding: 0px;
-    width: 100%;
+    width: 101%;
   }
   #header {
     width: 102% !important;
@@ -59,12 +59,27 @@
         }
         .p-item2c2 {
           position: absolute;
-          margin-top: 10vh;
-          margin-left: 60vh;
+          margin-top: 0vh;
+          margin-left: 15vh;
           z-index: 10;
         }
       }
     }
+
+    .descricao-swiper {
+      .img-logo,
+      .little-logo {
+        margin-top: 7vh;
+      }
+    }
+
+    .p-item2c2 {
+      position: absolute;
+      margin-top: -10vh;
+      margin-left: 25vh;
+      z-index: 10;
+    }
+
     .align-right {
       display: grid;
       text-align: right;
@@ -72,7 +87,6 @@
       font-weight: 900;
       vertical-align: middle;
       color: white;
-      background: -webkit-linear-gradient(top, #7427f1, #00dfec);
     }
 
     .vw-item1 {
@@ -84,7 +98,7 @@
 
     .vw-item2 {
       position: absolute;
-      margin-top: -30vh;
+      margin-top: 80vh;
       z-index: 2;
       background-repeat: no-repeat;
       left: 15vh;
@@ -121,15 +135,355 @@
   }
 
   #fecha-intro {
-    height: 95vh;
+    height: 85vh;
   }
 
   .card {
     margin-top: 2vh;
   }
 
-  .last-page .finish{
+  .last-page .finish {
     bottom: -10vh;
+  }
 
+  #grupo-empreendedores .grupo-02 .image_02 {
+    background-size: 290px;
+  }
+
+  #grupo-empreendedores .grupo-01 .image_01 {
+    background-size: 350px;
+  }
+
+  #melhor-caminho {
+    height: 95vh;
+  }
+
+  .first-content {
+    .card,
+    .section {
+      .action-button {
+        margin-top: 5vh;
+      }
+    }
+  }
+
+  .card {
+    width: 100%;
+    img {
+      width: 60%;
+    }
+  }
+
+  .little-logo {
+    width: 15vw;
+    // margin-top: 12vh!important;
+  }
+
+  #Builders {
+    .img-logo {
+      width: 40%;
+    }
+  }
+
+  #Players {
+    .img-logo {
+      width: 40% !important;
+    }
+  }
+  #Justice .img-logo {
+    width: 40%;
+  }
+
+  #SparkstartLeaners {
+    .panel-buttons {
+      bottom: -20vh;
+      left: 0px;
+      right: 0px;
+    }
+  }
+
+  #LeanersLastpage {
+    .finish {
+      bottom: -35vh;
+    }
+  }
+
+  .div-open {
+    .panel-buttons {
+      bottom: -30vh;
+    }
+  }
+
+  .descricao-swiper .row {
+    margin-top: 5vh;
+    padding: 30px;
+  }
+
+  .div-close {
+    .panel-buttons {
+      bottom: 30vh;
+    }
+  }
+
+  .img-logo {
+    width: 40%;
+  }
+  .img-big-logo {
+    width: 90%;
+  }
+
+  .div-open1 {
+    .panel-buttons {
+      bottom: -40vh;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  #header {
+    height: 65vh;
+    .content {
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+  }
+
+  #intro {
+    .content {
+      .p-item3 {
+        margin-left: -15vh;
+        width: 160%;
+        padding-bottom: 70px;
+      }
+
+      .p-item2 {
+        position: absolute;
+        margin-top: -5vh;
+        z-index: 5;
+        margin-left: -13vh;
+        width: 100%;
+      }
+
+      .p-item1 {
+        position: absolute;
+        margin-top: 5vh;
+        margin-left: -15vh;
+        width: 50%;
+        z-index: 10;
+      }
+    }
+  }
+
+  .img-topbottom {
+    animation-duration: 2s;
+    animation-name: moveTop;
+    animation-iteration-count: infinite;
+    position: absolute;
+    left: 50%;
+    margin-top: -35vh;
+  }
+
+  h1 {
+    font-size: calc(2em + 2vw);
+  }
+
+  p {
+    font-size: calc(0.8em + 0.5vw);
+  }
+
+  #intro {
+    .texto {
+      padding-right: 5%;
+      padding-top: 10%;
+      grid-column: 1 / span 17;
+      text-align: center;
+    }
+    .big-paragraph {
+      color: $primary;
+      font-size: calc(1.3em + 1vw);
+    }
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .p-item1 {
+    position: absolute;
+    margin-top: 65vh;
+    margin-left: -15vh;
+    width: 50%;
+    z-index: 10;
+  }
+
+  .p-item2 {
+    position: absolute;
+    margin-top: 10vh;
+    z-index: 5;
+    margin-left: -20vh;
+    width: 100%;
+  }
+
+  .p-item3 {
+    transform: translate3d(0px, 8px, 4px);
+    margin-left: -20vh;
+    width: 160%;
+  }
+
+  #abre-metodologia {
+    .align-right {
+      display: grid;
+      text-align: right;
+      padding-top: 0%;
+      font-weight: 900;
+      vertical-align: middle;
+      color: white;
+      padding-bottom: 80%;
+    }
+
+    .content {
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
+      .image_01 {
+        position: absolute;
+        margin-top: 40vh;
+        z-index: 5;
+        margin-left: 0vh;
+
+        .vw-item1 {
+          position: absolute;
+          margin-top: 55vh;
+          z-index: 10;
+          right: 9vh;
+        }
+
+        .vw-item2 {
+          margin-top: 50vh !important;
+          margin-left: -16vh !important;
+        }
+
+        .vw-item3 {
+          margin-top: 60vh;
+          margin-left: 0vh;
+          width: 90% !important;
+        }
+      }
+
+      .p-item2 {
+        position: absolute;
+        margin-top: -3vh;
+        z-index: 5;
+        margin-left: 5vh;
+        width: 100%;
+      }
+    }
+    .p-item2c2 {
+      position: absolute;
+      margin-top: 0vh;
+      margin-left: 25vh;
+      z-index: 10;
+    }
+  }
+
+  #podemos-te-ajudar {
+    .swiper-helper {
+      .slick-dots {
+        bottom: -174px;
+      }
+    }
+  }
+
+  .topicosmobi {
+    .swiper-helper {
+      height: 320px;
+      width: 90%;
+    }
+  }
+
+  #grupo-empreendedores {
+    .content {
+      padding-top: 5%;
+      padding-bottom: 5%;
+    }
+    .grupo-01 {
+      p {
+        border-right: unset;
+      }
+      display: block;
+      // grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+      border-bottom: 1px solid #00dfec;
+      text-align: right;
+      color: #00dfec;
+      font-weight: lighter;
+      font-size: calc(1rem + 0.3vw);
+      // border: #00dfec;
+      height: 40vh;
+      .image_01 {
+        padding-top: 20vh;
+      }
+    }
+
+    .grupo-02 {
+      display: block;
+
+      .image_02 {
+        background-size: 290px;
+        margin-top: 80vh;
+        border-right: unset;
+        border-top: 1px solid;
+      }
+      p {
+        position: absolute;
+        margin-top: -80vh;
+      }
+    }
+  }
+
+  #fecha-intro {
+    height: 105vh;
+    width: 80%;
+  }
+
+  .descricao-swiper {
+    .row {
+      display: block;
+      word-break: break-all;
+      text-align: center;
+      margin-top: 0vh;
+      line-height: 5px;
+    }
+  }
+
+  .little-logo {
+    width: 30vw;
+  }
+
+  .div-close {
+    .panel-buttons {
+      bottom: 13vh;
+      margin: 0 auto;
+      /* left: 0; */
+      right: 17vh;
+    }
+  }
+
+  .col-md-3 {
+    .content-align {
+      text-align: left;
+    }
+
+    .text-right {
+      text-align: left;
+    }
+  }
+
+  #fechamento {
+    div {
+      margin-top: 15vh;
+    }
+    .row {
+      .col-md-6 {
+        padding: 30px;
+      }
+    }
   }
 }
