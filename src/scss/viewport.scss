@@ -96,9 +96,10 @@
       right: 9vh;
     }
 
-    .vw-item2 {
+    .vw-item3 {
       position: absolute;
-      margin-top: 80vh;
+      // margin-top: 80vh;
+      // width: 100%!important;
       z-index: 2;
       background-repeat: no-repeat;
       left: 15vh;
@@ -241,7 +242,7 @@
 
 @media (max-width: 480px) {
   #header {
-    height: 65vh;
+    height: 95%;
     .content {
       grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     }
@@ -265,7 +266,7 @@
 
       .p-item1 {
         position: absolute;
-        margin-top: 5vh;
+        margin-top: 60vh;
         margin-left: -15vh;
         width: 50%;
         z-index: 10;
@@ -279,7 +280,8 @@
     animation-iteration-count: infinite;
     position: absolute;
     left: 50%;
-    margin-top: -35vh;
+    // margin-top: -35vh;
+    margin-top: -10vh;
   }
 
   h1 {
@@ -287,7 +289,7 @@
   }
 
   p {
-    font-size: calc(0.8em + 0.5vw);
+    font-size: calc(1.3em + 0.5vw);
   }
 
   #intro {
@@ -351,19 +353,24 @@
 
         .vw-item1 {
           position: absolute;
-          margin-top: 55vh;
+          margin-top: 130vh;
           z-index: 10;
           right: 9vh;
         }
 
         .vw-item2 {
-          margin-top: 50vh !important;
-          margin-left: -16vh !important;
+          // margin-top: 50vh !important;
+          // margin-left: -16vh !important;
+          position: absolute;
+          margin-top: 130vh;
+          z-index: 5;
+          background-repeat: no-repeat;
+          left: 10vh;
         }
 
         .vw-item3 {
-          margin-top: 60vh;
-          margin-left: 0vh;
+          margin-top: 130vh;
+          margin-left: -15vh;
           width: 90% !important;
         }
       }
@@ -379,7 +386,7 @@
     .p-item2c2 {
       position: absolute;
       margin-top: 0vh;
-      margin-left: 25vh;
+      margin-left: 40vh;
       z-index: 10;
     }
   }
@@ -387,7 +394,7 @@
   #podemos-te-ajudar {
     .swiper-helper {
       .slick-dots {
-        bottom: -174px;
+        bottom: -173px;
       }
     }
   }
@@ -399,7 +406,18 @@
     }
   }
 
+
+  .first-content{
+    font-size: calc(1.2em + 0.5vw);
+  }
+
   #grupo-empreendedores {
+    background-color: #262626;
+    color: white;
+    clip-path: polygon(0 7%, 100% 0, 100% 95%, 0 100%);
+    margin-top: -20vh;
+    padding-top: 15vh;
+
     .content {
       padding-top: 5%;
       padding-bottom: 5%;
@@ -438,12 +456,22 @@
     }
   }
 
+  .div-open {
+    .panel-buttons {
+      bottom: -25vh;
+    }
+  }
+
+
   #fecha-intro {
     height: 105vh;
     width: 80%;
   }
 
   .descricao-swiper {
+    .img-logo, .little-logo{
+      margin-top: 5vh;
+    }
     .row {
       display: block;
       word-break: break-all;
@@ -454,7 +482,7 @@
   }
 
   .little-logo {
-    width: 30vw;
+    width: 20vw;
   }
 
   .div-close {
@@ -487,3 +515,4 @@
     }
   }
 }
+ 

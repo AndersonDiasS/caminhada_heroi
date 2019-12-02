@@ -25,36 +25,55 @@ $("#drawer-button").click(function () {
 // Abrir Drawer
 
 
-$('menu-row a').on('click', function() {
+// $('menu-row a').on('click', function() {
 
-    var scrollAnchor = $(this).attr('data-scroll'),
-        scrollPoint = $('section[data-anchor="' + scrollAnchor + '"]').offset().top - 28;
+//     var scrollAnchor = $(this).attr('data-scroll'),
+//         scrollPoint = $('section[data-anchor="' + scrollAnchor + '"]').offset().top - 28;
 
-    $('body,html').animate({
-        scrollTop: scrollPoint
-    }, 500);
+//     $('body,html').animate({
+//         scrollTop: scrollPoint
+//     }, 500);
 
-    return false;
+//     return false;
 
-})
+// })
 
  
-$(window).scroll(function() {
-  var windscroll = $(window).scrollTop();
-  if (windscroll >= 100) {
-      // $('nav').addClass('fixed');
-      $('.scrolling-content section').each(function(i) {
-          if ($(this).position().top <= windscroll - 100) {
-              $('menu-row a.active').removeClass('active');
-              $('menu-row a').eq(i).addClass('active');
+ // Cache selectors
+ $(document).ready(function(){
+  
+    function smoothScroll(target) {
+          const headerHeight = $("#main-nav").outerHeight() + 10;
+          $("html,body").animate(
+              {"scrollTop":target.offset().top - headerHeight},
+              300
+          );
+      }
+    
+   $("#main-nav ul li").on("click", function(event){
+      if (this.getAttribute("href").charAt(0) == "#") {
+              event.preventDefault();
+              smoothScroll($(this.hash));
+          } else {
+              //just let link work
           }
-      });
-
-  } else {
-
-      // $('nav').removeClass('fixed');
-      $('menu-row a.active').removeClass('active');
-      $('menu-row a:first').addClass('active');
-  }
-
-}).scroll()
+    });
+    
+    $(window).scroll(function(){
+      let scrollPos = $(this).scrollTop();
+      let scrollDistance = scrollPos + 130;
+      
+      $("#main-nav ul li a[href^='#']").each(function () {
+              let currLink = $(this);
+              let refElement = $(currLink.attr("href"));
+              if (refElement.position().top <= scrollDistance && refElement.position().top + refElement.height() > scrollDistance) {
+                  $("#main-nav ul li a").removeClass("active");
+                  currLink.addClass("active");
+              }
+              else {
+                  currLink.removeClass("active");
+              }
+          });
+    });
+    
+  });

@@ -15,41 +15,43 @@
 <body>
     <!-- Menu drawer  -->
     <header class="sidenav" id="Drawer">
-        <div class="menu-body">
+        <div class="menu-body" id="main-nav">
+            <ul>
 
-            <div class="title-menu">
+            <li class="title-menu">
                 <h3> Você está aqui <i class="fas fa-times fa-1x" id="drawer-close"></i></h3>
-            </div>
+            </li>
 
-            <div class="menu-row">
+            <li class="menu-row" >
                 <div class="circle-item"> </div>
 
-                <a href="#f-ideathon" class="active menu-content"> Ideathon </a>
-            </div>
+                <a class="active menu-content" href="#section_1"> Ideathon </a>
+            </li>
 
-            <div class="menu-row">
+            <li class="menu-row" >
                 <div class="circle-item"> <img src="src/images/leadericon.png"> </div>
+                <a  class="menu-content"  href="#section_2">Leaner's</a>
+            </li>
 
-                <a href="#f-Leaner" class="menu-content">Leaner's</a>
-            </div>
-
-            <div class="menu-row">
+            <li class="menu-row" >
                 <div class="circle-item"> <img src="src/images/Buildericon.png"> </div>
-                <a href="#f-Builders" class="menu-content">Builder's</a>
-            </div>
-
-            <div class="menu-row">
+                <a  class="menu-content" href="#section_3" >Builder's</a>
+            </li>
+            
+            <li class="menu-row" >
                 <div class="circle-item"> <img src="src/images/playericon.png"></div>
-                <a href="#f-Players" class="menu-content"> Player's</a>
-            </div>
-            <div class="menu-row">
+                <a  class="menu-content" href="#section_4"> Player's</a>
+            </li>
+            <li class="menu-row" >
                 <div class="circle-item"> <img src="src/images/justiceicon.png"></div>
-                <a href="#f-Justice" class="menu-content"> Justice league</a>
-            </div>
-            <div class="menu-row">
+                <a  class="menu-content" href="#section_5"> Justice league</a>
+            </li>
+            <li class="menu-row" >
                 <div class="circle-item"></div>
-                <a href="#header" class="menu-content" id="Inicio"> Voltar para o inicio </a>
-            </div>
+                <a class="menu-content" href="#"> Voltar para o inicio </a>
+            </li>
+
+        </ul>
         </div>
     </header>
 
@@ -105,10 +107,10 @@
             <div class="content">
                 <div class="image_01">
                     <!-- <img src="src/images/intro_ilustra02.png"> -->
-                    <img src="src/images/parallax-pac/camda1conj2.png" data-rellax-speed="4"
-                        data-rellax-percentage="0.5" data-rellax-zindex="0" class="rellax p-item2c2">
-                    <img src="src/images/parallax-pac/camada2conj2.png" data-rellax-speed="4"
-                        data-rellax-percentage="0.5" data-rellax-zindex="0" class="rellax p-item2">
+                    <img src="src/images/parallax-pac/camda1conj2.png" data-rellax-speed="3"
+                        data-rellax-percentage="0.7" data-rellax-zindex="0" class="rellax p-item2c2">
+                    <img src="src/images/parallax-pac/camada2conj2.png" data-rellax-speed="5"
+                        data-rellax-percentage="0.7" data-rellax-zindex="0" class="rellax p-item2">
                     <!-- <img src="src/images/parallax-pac/.png" data-rellax-speed="4" data-rellax-percentage="0.5" data-rellax-zindex="0" class="rellax p-item3"> -->
                 </div>
 
@@ -127,11 +129,11 @@
                 <div class="image_01">
                     <!-- <img src="src/images/intro_ilustra03.png"> -->
                     <img src="src/images/parallax-pac/camada1conj3.png" data-rellax-speed="4"
-                        data-rellax-percentage="0.5" data-rellax-zindex="0" class="rellax p-item1 vw-item1">
+                        data-rellax-percentage="0.1" data-rellax-zindex="1" class="rellax p-item1 vw-item1">
                     <img src="src/images/parallax-pac/camada2conj3.png" data-rellax-speed="8"
-                        data-rellax-percentage="0.5" data-rellax-zindex="0" class="rellax p-item2 vw-item2">
+                        data-rellax-percentage="0.1" data-rellax-zindex="3" class="rellax p-item2 vw-item2">
                     <img src="src/images/parallax-pac/camada3conj3.png" data-rellax-speed="8"
-                        data-rellax-percentage="0.5" data-rellax-zindex="0" class="rellax p-item3 vw-item3">
+                        data-rellax-percentage="0.1" data-rellax-zindex="2" class="rellax p-item3 vw-item3">
                 </div>
 
 
@@ -606,8 +608,8 @@
                 </div>
 
                 <div class="card-swiper descricao-swiper code" id="">
-                    <img src="src/images/b-logo.svg" class="little-logo" style="width: 5vw; margin-top: 80px">
-                    <img src="src/images/Builder’s.svg" class="little-logo" style="margin-top: 20px;">
+                    <img src="src/images/b-logo.svg" class="little-logo" style="width: 5vw">
+                    <img src="src/images/Builder’s.svg" class="little-logo" style="margin-top: 10px;">
                     <p> Amadurecendo a ideia e criando um negócio</p>
                     <div class="row div-close content-builder" style="display: none;">
 
@@ -992,9 +994,9 @@
     <script src="src/js/slick.min.js"></script>
     <script src="src/js/parallax.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.10.0/rellax.min.js"></script>
-    <script src="src/js/menu-drawer.js"></script>
     <script src="src/js/wow.js"></script>
     <script src="src/js/custom.js"></script>
+    <script src="src/js/menu-drawer.js"></script>
 
 
 

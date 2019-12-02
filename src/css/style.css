@@ -3557,7 +3557,7 @@ p {
   content: "";
   position: absolute;
   background: #fff;
-  left: 35px;
+  left: 77px;
   margin-top: 50px; }
 
 .drawer-button {
@@ -6120,9 +6120,8 @@ p {
       margin-top: 0vh;
       z-index: 10;
       right: 9vh; }
-    #abre-metodologia .vw-item2 {
+    #abre-metodologia .vw-item3 {
       position: absolute;
-      margin-top: 80vh;
       z-index: 2;
       background-repeat: no-repeat;
       left: 15vh; }
@@ -6214,7 +6213,7 @@ p {
     bottom: -40vh; } }
 @media (max-width: 480px) {
   #header {
-    height: 65vh; }
+    height: 95%; }
     #header .content {
       grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); }
 
@@ -6230,7 +6229,7 @@ p {
     width: 100%; }
   #intro .content .p-item1 {
     position: absolute;
-    margin-top: 5vh;
+    margin-top: 60vh;
     margin-left: -15vh;
     width: 50%;
     z-index: 10; }
@@ -6241,13 +6240,13 @@ p {
     animation-iteration-count: infinite;
     position: absolute;
     left: 50%;
-    margin-top: -35vh; }
+    margin-top: -10vh; }
 
   h1 {
     font-size: calc(2em + 2vw); }
 
   p {
-    font-size: calc(0.8em + 0.5vw); }
+    font-size: calc(1.3em + 0.5vw); }
 
   #intro .texto {
     padding-right: 5%;
@@ -6297,15 +6296,18 @@ p {
       margin-left: 0vh; }
       #abre-metodologia .content .image_01 .vw-item1 {
         position: absolute;
-        margin-top: 55vh;
+        margin-top: 130vh;
         z-index: 10;
         right: 9vh; }
       #abre-metodologia .content .image_01 .vw-item2 {
-        margin-top: 50vh !important;
-        margin-left: -16vh !important; }
+        position: absolute;
+        margin-top: 130vh;
+        z-index: 5;
+        background-repeat: no-repeat;
+        left: 10vh; }
       #abre-metodologia .content .image_01 .vw-item3 {
-        margin-top: 60vh;
-        margin-left: 0vh;
+        margin-top: 130vh;
+        margin-left: -15vh;
         width: 90% !important; }
     #abre-metodologia .content .p-item2 {
       position: absolute;
@@ -6316,46 +6318,60 @@ p {
   #abre-metodologia .p-item2c2 {
     position: absolute;
     margin-top: 0vh;
-    margin-left: 25vh;
+    margin-left: 40vh;
     z-index: 10; }
 
   #podemos-te-ajudar .swiper-helper .slick-dots {
-    bottom: -174px; }
+    bottom: -173px; }
 
   .topicosmobi .swiper-helper {
     height: 320px;
     width: 90%; }
 
-  #grupo-empreendedores .content {
-    padding-top: 5%;
-    padding-bottom: 5%; }
-  #grupo-empreendedores .grupo-01 {
-    display: block;
-    border-bottom: 1px solid #00dfec;
-    text-align: right;
-    color: #00dfec;
-    font-weight: lighter;
-    font-size: calc(1rem + 0.3vw);
-    height: 40vh; }
-    #grupo-empreendedores .grupo-01 p {
-      border-right: unset; }
-    #grupo-empreendedores .grupo-01 .image_01 {
-      padding-top: 20vh; }
-  #grupo-empreendedores .grupo-02 {
-    display: block; }
-    #grupo-empreendedores .grupo-02 .image_02 {
-      background-size: 290px;
-      margin-top: 80vh;
-      border-right: unset;
-      border-top: 1px solid; }
-    #grupo-empreendedores .grupo-02 p {
-      position: absolute;
-      margin-top: -80vh; }
+  .first-content {
+    font-size: calc(1.2em + 0.5vw); }
+
+  #grupo-empreendedores {
+    background-color: #262626;
+    color: white;
+    clip-path: polygon(0 7%, 100% 0, 100% 95%, 0 100%);
+    margin-top: -20vh;
+    padding-top: 15vh; }
+    #grupo-empreendedores .content {
+      padding-top: 5%;
+      padding-bottom: 5%; }
+    #grupo-empreendedores .grupo-01 {
+      display: block;
+      border-bottom: 1px solid #00dfec;
+      text-align: right;
+      color: #00dfec;
+      font-weight: lighter;
+      font-size: calc(1rem + 0.3vw);
+      height: 40vh; }
+      #grupo-empreendedores .grupo-01 p {
+        border-right: unset; }
+      #grupo-empreendedores .grupo-01 .image_01 {
+        padding-top: 20vh; }
+    #grupo-empreendedores .grupo-02 {
+      display: block; }
+      #grupo-empreendedores .grupo-02 .image_02 {
+        background-size: 290px;
+        margin-top: 80vh;
+        border-right: unset;
+        border-top: 1px solid; }
+      #grupo-empreendedores .grupo-02 p {
+        position: absolute;
+        margin-top: -80vh; }
+
+  .div-open .panel-buttons {
+    bottom: -25vh; }
 
   #fecha-intro {
     height: 105vh;
     width: 80%; }
 
+  .descricao-swiper .img-logo, .descricao-swiper .little-logo {
+    margin-top: 5vh; }
   .descricao-swiper .row {
     display: block;
     word-break: break-all;
@@ -6364,7 +6380,7 @@ p {
     line-height: 5px; }
 
   .little-logo {
-    width: 30vw; }
+    width: 20vw; }
 
   .div-close .panel-buttons {
     bottom: 13vh;
