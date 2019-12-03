@@ -12,42 +12,42 @@
 </head>
 
 
-<body>
+<body data-spy="scroll" data-target="#main-nav" data-offset="50">
     <!-- Menu drawer  -->
     <header class="sidenav" id="Drawer">
         <div class="menu-body" id="main-nav">
-            <ul>
+            <ul class="panel-menu">
 
             <li class="title-menu">
                 <h3> Você está aqui <i class="fas fa-times fa-1x" id="drawer-close"></i></h3>
             </li>
 
-            <li class="menu-row" >
-                <div class="circle-item"> </div>
+            <li class="menu-row active" >
+                <div class="circle-item"> <img src="src/images/ideathon.png"></div>
 
-                <a class="active menu-content" href="#section_1"> Ideathon </a>
+                <a class=" menu-content" href="#section_1" data-spy="#section_1"> Ideathon </a>
             </li>
 
             <li class="menu-row" >
                 <div class="circle-item"> <img src="src/images/leadericon.png"> </div>
-                <a  class="menu-content"  href="#section_2">Leaner's</a>
+                <a  class="menu-content"  href="#section_2" data-spy="#section_2">Leaner's</a>
             </li>
 
             <li class="menu-row" >
                 <div class="circle-item"> <img src="src/images/Buildericon.png"> </div>
-                <a  class="menu-content" href="#section_3" >Builder's</a>
+                <a  class="menu-content" href="#section_3" data-spy="#section_3" >Builder's</a>
             </li>
             
             <li class="menu-row" >
                 <div class="circle-item"> <img src="src/images/playericon.png"></div>
-                <a  class="menu-content" href="#section_4"> Player's</a>
+                <a  class="menu-content" href="#section_4" data-spy="#section_4"> Player's</a>
             </li>
             <li class="menu-row" >
                 <div class="circle-item"> <img src="src/images/justiceicon.png"></div>
-                <a  class="menu-content" href="#section_5"> Justice league</a>
+                <a  class="menu-content" href="#section_5"  data-spy="#section_5"> Justice league</a>
             </li>
             <li class="menu-row" >
-                <div class="circle-item"></div>
+                <div class="circle-item"><i class="material-icons">home</i></div>
                 <a class="menu-content" href="#"> Voltar para o inicio </a>
             </li>
 
@@ -377,7 +377,7 @@
                 data-background="linear-gradient(463.3deg, rgb(255, 48, 92) 0%, rgb(116, 39, 241) 100%)">
 
                 <div class="card-swiper first-content" id="f-ideathon">
-                    <div class="card section" id="section_1">
+                    <div class="card section" id="section_1" data-nav="#section_1">
                         <img src="src/images/Ideathon.svg" class="img-responsive">
 
                         <p class="start-jorney primary-font ">O começo da jornada</p>
@@ -473,7 +473,7 @@
 
             <section id="Leaners" class="change swiper" data-background="#00DFEC">
                 <div class="card-swiper first-content" id="f-Leaner">
-                    <div class="card section" id="section_2">
+                    <div class="card section" id="section_2" data-nav="#section_2">
                         <img src="src/images/leaners.svg" class="img-logo">
 
                         <p class="start-jorney Leaners-font"> Amadurecendo a ideia e criando um negócio </p>
@@ -592,7 +592,7 @@
 
             <section id="Builders" class="change swiper" data-background="#7427F1">
                 <div class="card-swiper  first-content" id="f-Builders">
-                    <div class="card section" id="section_3">
+                    <div class="card section" id="section_3" data-nav="#section_3">
                         <img src="src/images/builders.svg" class="img-logo">
 
                         <p class="start-jorney builders-color"> Consolidando o negócio e melhorando resultados </p>
@@ -735,7 +735,7 @@
 
             <section id="Players" class="change swiper" data-background="#FF305C">
                 <div class="card-swiper first-content" id="f-Players">
-                    <div class="card section" id="section_4">
+                    <div class="card section" id="section_4" data-nav="#section_4">
                         <img src="src/images/Players.svg" class="img-logo">
 
                         <p class="start-jorney Players-color"> Tomando o seu empreendimento ainda maior </p>
@@ -854,7 +854,7 @@
 
             <section id="Justice" class="change swiper" data-background="#262626">
                 <div class="card-swiper first-content" id="f-Justice">
-                    <div class="card section" id="section_5">
+                    <div class="card section" id="section_5" data-nav="#section_5">
                         <img src="src/images/Justice.svg" class="img-logo">
 
                         <p class="start-jorney"> Seu empreendimento já é grande, mas pode ser maior </p>
@@ -992,7 +992,7 @@
     <script src="src/js/jquery.js"></script>
     <script src="src/js/jquery.scrolling.min.js"></script>
     <script src="src/js/slick.min.js"></script>
-    <script src="src/js/parallax.js"></script>
+    <!-- <script src="src/js/parallax.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.10.0/rellax.min.js"></script>
     <script src="src/js/wow.js"></script>
     <script src="src/js/custom.js"></script>

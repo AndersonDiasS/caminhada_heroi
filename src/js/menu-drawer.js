@@ -40,40 +40,36 @@ $("#drawer-button").click(function () {
 
  
  // Cache selectors
- $(document).ready(function(){
+//  $(document).ready(function(){
   
-    function smoothScroll(target) {
-          const headerHeight = $("#main-nav").outerHeight() + 10;
-          $("html,body").animate(
-              {"scrollTop":target.offset().top - headerHeight},
-              300
-          );
-      }
+//     function smoothScroll(target) {
+//           const headerHeight = $("#main-nav").outerHeight() + 10;
+//           $("html,body").animate(
+//               {"scrollTop":target.offset().top - headerHeight},
+//               300
+//           );
+//       }
     
-   $("#main-nav ul li").on("click", function(event){
-      if (this.getAttribute("href").charAt(0) == "#") {
-              event.preventDefault();
-              smoothScroll($(this.hash));
-          } else {
-              //just let link work
-          }
-    });
-    
-    $(window).scroll(function(){
-      let scrollPos = $(this).scrollTop();
-      let scrollDistance = scrollPos + 130;
+ 
+//     $(window).scroll(function(){
+//       let scrollPos = $(this).scrollTop();
+//       let scrollDistance = scrollPos + 130;
       
-      $("#main-nav ul li a[href^='#']").each(function () {
-              let currLink = $(this);
-              let refElement = $(currLink.attr("href"));
-              if (refElement.position().top <= scrollDistance && refElement.position().top + refElement.height() > scrollDistance) {
-                  $("#main-nav ul li a").removeClass("active");
-                  currLink.addClass("active");
-              }
-              else {
-                  currLink.removeClass("active");
-              }
-          });
-    });
+//       $("#main-nav ul li 'a[href*=\\#]'").each(function () {
+//               let currLink = $(this);
+//               let refElement = $(currLink.attr("href"));
+//               if (refElement.position().top <= scrollDistance && refElement.position().top + refElement.height() > scrollDistance) {
+//                   $("#main-nav ul li a").removeClass("active");
+//                   currLink.addClass("active");
+//               }
+//               else {
+//                   currLink.removeClass("active");
+//               }
+//           });
+//     });
     
-  });
+//   });
+
+
+ 
+   

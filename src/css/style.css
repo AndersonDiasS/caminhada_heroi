@@ -3550,6 +3550,8 @@ p {
   border-radius: 50%;
   border: 1px solid #fff;
   opacity: 0.5; }
+  .circle-item i {
+    padding: 10px; }
 
 .circle-item:after {
   width: 2px;
@@ -3590,6 +3592,21 @@ p {
 
 .active {
   opacity: 0.9 !important; }
+
+.active {
+  transition: 0.5s; }
+  .active .circle-item::after {
+    left: 80px;
+    margin-top: 60px; }
+  .active .circle-item {
+    width: 50px;
+    height: 50px;
+    opacity: 1; }
+    .active .circle-item img {
+      width: 100%; }
+
+.panel-menu li:last-child .circle-item::after {
+  width: 0px; }
 
 .img-topbottom {
   animation-duration: 2s;
