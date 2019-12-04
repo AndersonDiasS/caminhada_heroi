@@ -83,6 +83,48 @@ $(window).ready(function () {
 
 });
 
+// $(window).ready(function () {
+//   var wHeight = $(window).height();
+//   $('.change')
+//     .height(wHeight)
+//     .scrollie({
+//       scrollOffset: -50,
+//       scrollingInView: function (elem) {
+//         var bgColor = elem.data('background');
+//         $('.scrolling-content').css('background', bgColor);
+//         switch (bgColor) {
+//           case 'linear-gradient(463.3deg, rgb(255, 48, 92) 0%, rgb(116, 39, 241) 100%)':  // Ideathon
+//             //ativar ideathon 
+//             //desativar as outras
+//             break;
+//           case '#00DFEC':                                                                 // Learners 
+//             //ativar learners
+//             //desativar as outras
+//             break;
+//           case '#7427F1':                                                                 // Builders
+//             //ativar builders
+//             //desativar as outras
+//             break;
+//           case '#FF305C':                                                                 // Players
+//             //ativar players
+//             //desativar as outras
+//             break;
+//           case '#262626':                                                                 // Justice
+//             //ativar justice
+//             //desativar resto  
+//           default:       
+//             //defaultzin 
+//         }
+//       }
+//     });
+// });
+
+
+
+
+
+
+
 
 function change(step) {
 

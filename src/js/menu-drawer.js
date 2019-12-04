@@ -3,10 +3,10 @@
 $("#drawer-button").click(function () {
   
     if ($('#Drawer').width() < 300) {
-       $('#Drawer').animate({'width': 500}, 100);
+       $('#Drawer').toggleClass("drawer-opened");
     
     } else {
-       $('#Drawer').animate({'width': 0}, 1500);
+       $('#Drawer').toggleClass("drawer-opened");
      }
    $('#drawer-button').toggleClass("opened"), 500;
  });
@@ -14,9 +14,9 @@ $("#drawer-button").click(function () {
 
  $("#drawer-close").click(function(){
      if ($('#Drawer').width() >= 500){
-         $('#Drawer').animate({'width': 0}, 100);
+         $('#Drawer').toggleClass('drawer-opened');
      } else{
-         $('#Drawer').animate({'width': 500}, 150);
+         $('#Drawer').toggleClass('drawer-opened');
      }
      $('#drawer-button').toggleClass("opened"), 500;
 

@@ -12,46 +12,46 @@
 </head>
 
 
-<body data-spy="scroll" data-target="#main-nav" data-offset="50">
+<body>
     <!-- Menu drawer  -->
     <header class="sidenav" id="Drawer">
         <div class="menu-body" id="main-nav">
             <ul class="panel-menu">
 
-            <li class="title-menu">
-                <h3> Você está aqui <i class="fas fa-times fa-1x" id="drawer-close"></i></h3>
-            </li>
+                <li class="title-menu">
+                    <h3> Você está aqui <i class="fas fa-times fa-1x" id="drawer-close"></i></h3>
+                </li>
 
-            <li class="menu-row active" >
-                <div class="circle-item"> <img src="src/images/ideathon.png"></div>
+                <li class="menu-row active">
+                    <div class="circle-item"> <img src="src/images/ideathon.png"></div>
 
-                <a class=" menu-content" href="#section_1" data-spy="#section_1"> Ideathon </a>
-            </li>
+                    <a class=" menu-content" href="#section_1" data-spy="#section_1"> Ideathon </a>
+                </li>
 
-            <li class="menu-row" >
-                <div class="circle-item"> <img src="src/images/leadericon.png"> </div>
-                <a  class="menu-content"  href="#section_2" data-spy="#section_2">Leaner's</a>
-            </li>
+                <li class="menu-row">
+                    <div class="circle-item"> <img src="src/images/leadericon.png"> </div>
+                    <a class="menu-content" href="#section_2" data-spy="#section_2">Leaner's</a>
+                </li>
 
-            <li class="menu-row" >
-                <div class="circle-item"> <img src="src/images/Buildericon.png"> </div>
-                <a  class="menu-content" href="#section_3" data-spy="#section_3" >Builder's</a>
-            </li>
-            
-            <li class="menu-row" >
-                <div class="circle-item"> <img src="src/images/playericon.png"></div>
-                <a  class="menu-content" href="#section_4" data-spy="#section_4"> Player's</a>
-            </li>
-            <li class="menu-row" >
-                <div class="circle-item"> <img src="src/images/justiceicon.png"></div>
-                <a  class="menu-content" href="#section_5"  data-spy="#section_5"> Justice league</a>
-            </li>
-            <li class="menu-row" >
-                <div class="circle-item"><i class="material-icons">home</i></div>
-                <a class="menu-content" href="#"> Voltar para o inicio </a>
-            </li>
+                <li class="menu-row">
+                    <div class="circle-item"> <img src="src/images/Buildericon.png"> </div>
+                    <a class="menu-content" href="#section_3" data-spy="#section_3">Builder's</a>
+                </li>
 
-        </ul>
+                <li class="menu-row">
+                    <div class="circle-item"> <img src="src/images/playericon.png"></div>
+                    <a class="menu-content" href="#section_4" data-spy="#section_4"> Player's</a>
+                </li>
+                <li class="menu-row">
+                    <div class="circle-item"> <img src="src/images/justiceicon.png"></div>
+                    <a class="menu-content" href="#section_5" data-spy="#section_5"> Justice league</a>
+                </li>
+                <li class="menu-row">
+                    <div class="circle-item"><i class="material-icons">home</i></div>
+                    <a class="menu-content" href="#"> Voltar para o inicio </a>
+                </li>
+
+            </ul>
         </div>
     </header>
 
@@ -158,8 +158,7 @@
                     <div class="topicosmobi">
 
                         <div class="swiper-helper">
-                            <!-- <div> -->
-
+                       
                             <div class="content">
 
                                 <p class="wow FadeIn mt-10" data-wow-duration="2s" data-wow-delay="1s">metodologia de
@@ -339,11 +338,13 @@
                     <p>
                         Os que se arriscam iniciando seus negócios <b>sozinhos, sem apoio, perdem tempo e dinheiro</b>,
                         aprendendo com seus erros e acertos</p>
-                    <div class="image_01"></div>
+                    <div class="image_01 rellax" data-rellax-speed="4" data-rellax-percentage="0.5"
+                        data-rellax-zindex="5"></div>
                 </div>
 
                 <div class="grupo-02 ">
-                    <div class="image_02"></div>
+                    <div class="image_02 rellax" data-rellax-speed="4" data-rellax-percentage="0.5"
+                        data-rellax-zindex="5"></div>
                     <p>Os que encontram mentores confiáveis e <b>encurtam seu caminho, economizando tempo e dinheiro</b>
                     </p>
                 </div>
@@ -651,8 +652,9 @@
                         </div>
 
                     </div>
-                    <div class="row div-open content-builder" style="display: none;">
-                        <div class="col-md-4 ">
+                    <div class="row div-open  " style="display: none;">
+                        <!-- <div class="content-builder"> -->
+                        <div class="col-md-4 content-builder">
                             <img src="src/images/sparkfunnels.svg">
                             <br>
                             <p>
@@ -663,7 +665,7 @@
                             <button class="btn-builder"> Quero começar agora </button>
                         </div>
 
-                        <div class="col-md-4 ">
+                        <div class="col-md-4 content-builder">
                             <img src="src/images/sparkfunnels.svg">
                             <br>
                             <p>
@@ -673,7 +675,7 @@
                             <button class="btn-builder"> Quero começar agora </button>
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-4 content-builder">
                             <img src="src/images/sparkfunnels.svg"><br>
                             <p>
                                 Ferramenta voltada para criação e estruturação de funis de venda de alta conversão, sem
@@ -682,10 +684,43 @@
 
                             <button class="btn-builder"> Quero começar agora </button>
                         </div>
+                    <!-- </div> -->
+
+                        <div class="swiper-helper mobi-funnels">
+                            <div class="col-md-4 ">
+                                <img src="src/images/sparkfunnels.svg">
+                                <br>
+                                <p>
+                                    Ferramenta voltada para criação e estruturação de funis de venda de alta conversão, sem
+                                    a necessidade de contratar programadores ou designers.
+                                </p>
+    
+                                <button class="btn-builder"> Quero começar agora </button>
+                            </div>
+    
+                            <div class="col-md-4 ">
+                                <img src="src/images/sparkfunnels.svg">
+                                <br>
+                                <p>
+                                    Ferramenta voltada para criação e estruturação de funis de venda de alta conversão, sem
+                                    a necessidade de contratar programadores ou designers.
+                                </p>
+                                <button class="btn-builder"> Quero começar agora </button>
+                            </div>
+    
+                            <div class="col-md-4">
+                                <img src="src/images/sparkfunnels.svg"><br>
+                                <p>
+                                    Ferramenta voltada para criação e estruturação de funis de venda de alta conversão, sem
+                                    a necessidade de contratar programadores ou designers.
+                                </p>
+    
+                                <button class="btn-builder"> Quero começar agora </button>
+                            </div>
+                        </div>
 
 
-
-                        <div class="text-center action-button panel-buttons">
+                        <div class="text-center action-button panel-buttons swiper-mobi">
 
                             <a class="btn-prev white " onclick="change(0)"><i class="fas fa-arrow-circle-left "></i>
                                 Anterior</a>
@@ -749,8 +784,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-swiper descricao-swiper" id="">
-                    <img src="src/images/Logo_players.svg" class="little-logo">
+                <div class="card-swiper descricao-swiper">
+                    <img src="src/images/Logo_players.svg" id="content-players" class="little-logo">
                     <p> Tomando o seu empreendimento ainda maior</p>
 
                     <div class="row div-close" style="display: none;">
@@ -777,7 +812,7 @@
                         </div>
 
 
-                        <div class="text-center action-button panel-buttons">
+                        <div class="text-center action-button panel-buttons align-closebtn">
 
                             <a class="btn-prev white navPlayersprev" onclick="change(4)"><i
                                     class="fas fa-arrow-circle-left "></i>
@@ -807,7 +842,7 @@
                             <button class="btn-primary btn-2x"> Quero começar agora </button>
 
 
-                            <div class="text-center action-button panel-buttons finish">
+                            <div class="text-center action-button panel-buttons SparkAffiliates">
 
                                 <a class="btn-prev white" onclick="change(0)"><i class="fas fa-arrow-circle-left "></i>
                                     Anterior</a>
@@ -868,7 +903,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-swiper descricao-swiper">
+                <div class="card-swiper descricao-swiper" id="justice-content">
                     <img src="src/images/Logo-Justice.png" class="little-logo">
                     <p> Seu empreendimento ja é grande, mas pode ser maior</p>
                     <div class="row div-close" style="display: none;">
@@ -941,8 +976,8 @@
                     </div>
 
 
-                    <div class="row div-open1" id="desc-justice" style="display: none;">
-                        <div class="col-md-6 col-sm-12 ">
+                    <div class="row div-open1" style="display: none;">
+                        <div class="col-md-6 col-sm-12 " id="l-Justice">
 
 
                             <h4 class="white">
@@ -992,7 +1027,6 @@
     <script src="src/js/jquery.js"></script>
     <script src="src/js/jquery.scrolling.min.js"></script>
     <script src="src/js/slick.min.js"></script>
-    <!-- <script src="src/js/parallax.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.10.0/rellax.min.js"></script>
     <script src="src/js/wow.js"></script>
     <script src="src/js/custom.js"></script>
