@@ -3591,9 +3591,6 @@ p {
   display: none; }
 
 .active {
-  opacity: 0.9 !important; }
-
-.active {
   transition: 0.5s; }
   .active .circle-item::after {
     left: 80px;
@@ -3604,6 +3601,10 @@ p {
     opacity: 1; }
     .active .circle-item img {
       width: 100%; }
+  .active a {
+    opacity: 0.9;
+    transition: 0.3s;
+    font-size: 25px; }
 
 .panel-menu li:last-child .circle-item::after {
   width: 0px; }

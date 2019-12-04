@@ -64,60 +64,85 @@ $('.swiper-helper').slick({
 // Scrolling - Parametros 
 
 
-$(window).ready(function () {
-
-  var wHeight = $(window).height();
-
-  $('.change')
-    .height(wHeight)
-    .scrollie({
-      scrollOffset: -50,
-      scrollingInView: function (elem) {
-
-        var bgColor = elem.data('background');
-
-        $('.scrolling-content').css('background', bgColor);
-
-      }
-    });
-
-});
-
 // $(window).ready(function () {
+
 //   var wHeight = $(window).height();
+
 //   $('.change')
 //     .height(wHeight)
 //     .scrollie({
 //       scrollOffset: -50,
 //       scrollingInView: function (elem) {
+
 //         var bgColor = elem.data('background');
+
 //         $('.scrolling-content').css('background', bgColor);
-//         switch (bgColor) {
-//           case 'linear-gradient(463.3deg, rgb(255, 48, 92) 0%, rgb(116, 39, 241) 100%)':  // Ideathon
-//             //ativar ideathon 
-//             //desativar as outras
-//             break;
-//           case '#00DFEC':                                                                 // Learners 
-//             //ativar learners
-//             //desativar as outras
-//             break;
-//           case '#7427F1':                                                                 // Builders
-//             //ativar builders
-//             //desativar as outras
-//             break;
-//           case '#FF305C':                                                                 // Players
-//             //ativar players
-//             //desativar as outras
-//             break;
-//           case '#262626':                                                                 // Justice
-//             //ativar justice
-//             //desativar resto  
-//           default:       
-//             //defaultzin 
-//         }
+
 //       }
 //     });
+
 // });
+
+$(window).ready(function () {
+  var wHeight = $(window).height();
+  $('.change')
+    .height(wHeight)
+    .scrollie({
+      scrollOffset: -50,
+      scrollingInView: function (elem) {
+        var bgColor = elem.data('background');
+        $('.scrolling-content').css('background', bgColor);
+        switch (bgColor) {
+          case 'linear-gradient(463.3deg, rgb(255, 48, 92) 0%, rgb(116, 39, 241) 100%)':  // Ideathon
+          $('#ideathon-menu').addClass('active');
+          $('#leaners-menu').removeClass('active');
+          $('#builder-menu').removeClass('active');
+          $('#player-menu').removeClass('active');
+          $('#justice-menu').removeClass('active');
+            //ativar ideathon 
+            //desativar as outras
+            break;
+          case '#00DFEC':                                                                 // Learners 
+            //ativar learners
+            $('#ideathon-menu').removeClass('active');
+            $('#leaners-menu').addClass('active');
+            $('#builder-menu').removeClass('active');
+            $('#player-menu').removeClass('active');
+            $('#justice-menu').removeClass('active');
+            //desativar as outras
+            break;
+          case '#7427F1':                                                                 // Builders
+            //ativar builders
+            $('#ideathon-menu').removeClass('active');
+            $('#leaners-menu').removeClass('active');
+            $('#builder-menu').addClass('active');
+            $('#player-menu').removeClass('active');
+            $('#justice-menu').removeClass('active');
+            //desativar as outras
+            break;
+          case '#FF305C':                                                                 // Players
+            //ativar players
+            $('#ideathon-menu').removeClass('active');
+            $('#leaners-menu').removeClass('active');
+            $('#builder-menu').removeClass('active');
+            $('#player-menu').addClass('active');
+            $('#justice-menu').removeClass('active');
+            //desativar as outras
+            break;
+          case '#262626':                                                                 // Justice
+            //ativar justice
+            $('#ideathon-menu').removeClass('active');
+            $('#leaners-menu').removeClass('active');
+            $('#builder-menu').removeClass('active');
+            $('#player-menu').removeClass('active');
+            $('#justice-menu').addClass('active');
+            //desativar resto  
+          default:       
+            //defaultzin 
+        }
+      }
+    });
+});
 
 
 
