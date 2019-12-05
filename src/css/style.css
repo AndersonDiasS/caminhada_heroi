@@ -386,7 +386,7 @@ p {
   margin-right: 25px; }
 
 .panel-buttons {
-  bottom: 25vh;
+  bottom: 30vh;
   transition: all 1s;
   position: absolute;
   align-content: center; }
@@ -642,6 +642,14 @@ p {
     display: flex;
     justify-content: center;
     width: 25vw; }
+
+.SparkAffiliates {
+  bottom: -15vh !important;
+  transition: all 1s;
+  position: absolute;
+  align-content: center;
+  left: 0;
+  right: 0; }
 
 .first-content {
   font-size: 30px;
@@ -1030,7 +1038,7 @@ p {
   margin-right: 25px; }
 
 .panel-buttons {
-  bottom: 25vh;
+  bottom: 30vh;
   transition: all 1s;
   position: absolute;
   align-content: center; }
@@ -1288,6 +1296,9 @@ p {
   #Leaners .btn-primary {
     color: #00DFEC; }
 
+#Leaners-panel {
+  bottom: 10vh; }
+
 .first-content {
   font-size: 30px;
   line-height: 38px;
@@ -1675,7 +1686,7 @@ p {
   margin-right: 25px; }
 
 .panel-buttons {
-  bottom: 25vh;
+  bottom: 30vh;
   transition: all 1s;
   position: absolute;
   align-content: center; }
@@ -2350,7 +2361,7 @@ p {
   margin-right: 25px; }
 
 .panel-buttons {
-  bottom: 25vh;
+  bottom: 30vh;
   transition: all 1s;
   position: absolute;
   align-content: center; }
@@ -3250,7 +3261,7 @@ p {
   margin-right: 25px; }
 
 .panel-buttons {
-  bottom: 25vh;
+  bottom: 30vh;
   transition: all 1s;
   position: absolute;
   align-content: center; }
@@ -3610,7 +3621,8 @@ p {
   width: 0px; }
 
 .drawer-opened {
-  width: 60vh; }
+  width: 60vh;
+  z-index: 1000; }
   @media (max-width: 800px) {
     .drawer-opened {
       width: 100vw; } }

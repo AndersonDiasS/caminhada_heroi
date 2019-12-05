@@ -93,12 +93,21 @@ $(window).ready(function () {
         var bgColor = elem.data('background');
         $('.scrolling-content').css('background', bgColor);
         switch (bgColor) {
+          case '#header':
+            $('#menu-header').addClass('active');
+            $('#ideathon-menu').removeClass('active');
+            $('#leaners-menu').removeClass('active');
+            $('#builder-menu').removeClass('active');
+            $('#player-menu').removeClass('active');
+            $('#justice-menu').removeClass('active');
+
           case 'linear-gradient(463.3deg, rgb(255, 48, 92) 0%, rgb(116, 39, 241) 100%)':  // Ideathon
           $('#ideathon-menu').addClass('active');
           $('#leaners-menu').removeClass('active');
           $('#builder-menu').removeClass('active');
           $('#player-menu').removeClass('active');
           $('#justice-menu').removeClass('active');
+          $('#menu-header').removeClass('active');
             //ativar ideathon 
             //desativar as outras
             break;
@@ -109,6 +118,7 @@ $(window).ready(function () {
             $('#builder-menu').removeClass('active');
             $('#player-menu').removeClass('active');
             $('#justice-menu').removeClass('active');
+            $('#menu-header').removeClass('active');
             //desativar as outras
             break;
           case '#7427F1':                                                                 // Builders
@@ -118,6 +128,7 @@ $(window).ready(function () {
             $('#builder-menu').addClass('active');
             $('#player-menu').removeClass('active');
             $('#justice-menu').removeClass('active');
+            $('#menu-header').removeClass('active');
             //desativar as outras
             break;
           case '#FF305C':                                                                 // Players
@@ -127,6 +138,7 @@ $(window).ready(function () {
             $('#builder-menu').removeClass('active');
             $('#player-menu').addClass('active');
             $('#justice-menu').removeClass('active');
+            $('#menu-header').removeClass('active');
             //desativar as outras
             break;
           case '#262626':                                                                 // Justice
@@ -136,6 +148,7 @@ $(window).ready(function () {
             $('#builder-menu').removeClass('active');
             $('#player-menu').removeClass('active');
             $('#justice-menu').addClass('active');
+            $('#menu-header').removeClass('active');
             //desativar resto  
           default:       
             //defaultzin 
